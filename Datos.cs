@@ -1,6 +1,45 @@
-﻿namespace tl1-proyectofinal2024-ElZorroAs;
+﻿/*
+Datos:
+    Tipo;
+    Nombre;
+    Apodo;
+    Fecha de Nacimiento;
+    Edad; //entre 0 a 300
+*/
+using System;
 
-public class Datos
+namespace Personajes
 {
+    public class Datos
+    {
+        private string tipo;
+        private string nombre;
+        private string apodo;
+        private DateTime fechaDeNacimiento;
+        private int edad; //entre 0 a 300
 
+        public Datos(string tipo, string nombre, string apodo, DateTime fechaDeNacimiento, int edad)
+        {
+            this.Tipo = tipo;
+            this.Nombre = nombre;
+            this.Apodo = apodo;
+            this.FechaDeNacimiento = fechaDeNacimiento;
+            this.Edad = edad;
+        }
+
+        public string Tipo { get => tipo; set => tipo = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
+        public string Apodo { get => apodo; set => apodo = value; }
+        public DateTime FechaDeNacimiento { get => fechaDeNacimiento; set => fechaDeNacimiento = value; }
+        public int Edad 
+        { 
+            get => edad; 
+            set 
+            { 
+                if (value < 0 || value > 300)
+                    throw new ArgumentOutOfRangeException("Edad debe estar entre 0 y 300.");
+                edad = value; 
+            } 
+        }
+    }
 }
