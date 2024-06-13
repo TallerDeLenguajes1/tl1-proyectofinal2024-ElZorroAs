@@ -1,11 +1,9 @@
 ﻿namespace Personajes;
-
-// Importar las clases Datos y Caracteristicas
+//==============================================================================================================================//
 /*
-using Personajes.Datos;
-using Personajes.Caracteristicas;
+1ra parte Generación de personaje:
 */
-
+//==============================================================================================================================//
 public class Personaje
 {
     Datos datos;
@@ -31,3 +29,4 @@ public class Personaje
         set => caracteristicas = value;
     }
 }
+//==============================================================================================================================//
