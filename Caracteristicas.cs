@@ -6,12 +6,12 @@ namespace Personajes
 /*
 1ra parte Generación de personaje:
 Datos:
-    velocidad;// 1 a 10
-    destreza; //1 a 5
-    fuerza;//1 a 10
-    Nivel; //1 a 10
-    Armadura; //1 a 10
-    Salud://100
+    velocidad;  // 1 a 10
+    destreza;   //1 a 5
+    fuerza;     //1 a 10
+    Nivel;      //1 a 10
+    Armadura;   //1 a 10
+    Salud:      //100
 */
 //==============================================================================================================================//
     public class Caracteristicas

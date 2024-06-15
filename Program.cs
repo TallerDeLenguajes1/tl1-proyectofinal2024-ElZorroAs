@@ -9,24 +9,32 @@ Prueba de terminal:
 //==============================================================================================================================//
     class Program
     {
+        
         static void Main(string[] args)
         {
-            // Crear instancia de Datos
-            Datos datosPersonaje = new Datos("Humano", "John", "El valiente", new DateTime(1990, 5, 15), 30);
-
-            // Crear instancia de Caracteristicas
-            Caracteristicas caracteristicasPersonaje = new Caracteristicas(5, 3, 8, 7, 5); // Pasa solo 5 argumentos
-
-            // Crear un nuevo personaje usando las instancias de Datos y Caracteristicas
-            Personaje personaje = new Personaje(datosPersonaje, caracteristicasPersonaje);
+            for (int i = 1; i < 6; i++)
+            {
+            // Generar un personaje aleatorio
+            Personaje personajeAleatorio = FabricaDePersonajes.CrearPersonajeAleatorio();
 
             // Mostrar los datos y características del personaje
-            Console.WriteLine($"Nombre del personaje: {personaje.Datos.Nombre}");
-            Console.WriteLine($"Tipo de personaje: {personaje.Datos.Tipo}");
-            Console.WriteLine($"Edad del personaje: {personaje.Datos.Edad}");
-            Console.WriteLine($"Velocidad del personaje: {personaje.Caracteristicas.Velocidad}");
-            Console.WriteLine($"Fuerza del personaje: {personaje.Caracteristicas.Fuerza}");
-            Console.WriteLine($"Nivel del personaje: {personaje.Caracteristicas.Nivel}");
+            Console.WriteLine("[========================================================================]");
+            Console.WriteLine($"[                              Personaje {i}                               ]");
+            Console.WriteLine("[========================================================================]");
+            Console.WriteLine($"Nombre del personaje: {personajeAleatorio.Datos.Nombre}");
+            Console.WriteLine($"Tipo de personaje: {personajeAleatorio.Datos.Tipo}");
+            Console.WriteLine($"Apodo del personaje: {personajeAleatorio.Datos.Apodo}");
+            Console.WriteLine($"Fecha de nacimiento del personaje: {personajeAleatorio.Datos.FechaDeNacimiento.ToShortDateString()}");
+            Console.WriteLine($"Edad del personaje: {personajeAleatorio.Datos.Edad}");
+            Console.WriteLine($"Velocidad del personaje: {personajeAleatorio.Caracteristicas.Velocidad}");
+            Console.WriteLine($"Destreza del personaje: {personajeAleatorio.Caracteristicas.Destreza}");
+            Console.WriteLine($"Fuerza del personaje: {personajeAleatorio.Caracteristicas.Fuerza}");
+            Console.WriteLine($"Nivel del personaje: {personajeAleatorio.Caracteristicas.Nivel}");
+            Console.WriteLine($"Armadura del personaje: {personajeAleatorio.Caracteristicas.Armadura}");
+            Console.WriteLine($"Salud del personaje: {personajeAleatorio.Caracteristicas.Salud}");
+            Console.WriteLine("[========================================================================]");
+
+            }
         }
     }
 //==============================================================================================================================//
