@@ -8,25 +8,29 @@ public class Personaje
 {
     Datos datos;
     Caracteristicas caracteristicas;
-
+    //- por qué crear una propiedad para editar los datos y características? es inseguro
     // Constructor para inicializar datos y características
     public Personaje(Datos datos, Caracteristicas caracteristicas)
     {
-        this.Datos = datos;
-        this.Caracteristicas = caracteristicas;
+        this.datos = datos;
+        this.caracteristicas = caracteristicas;
     }
 
     // Propiedades para acceder a los datos y características
     public Datos Datos
     {
         get => datos;
-        set => datos = value;
+        //set => datos = value;
+    }
+    public int Velocidad{
+        get => caracteristicas.Velocidad;
+
     }
 
     public Caracteristicas Caracteristicas
     {
         get => caracteristicas;
-        set => caracteristicas = value;
+        //set => caracteristicas = value;
     }
 //==============================================================================================================================//
     

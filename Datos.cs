@@ -11,6 +11,10 @@ Datos:
     Apodo;
     Fecha de Nacimiento;
     Edad;      //entre 0 a 300
+En Personaje.cs
+- por qué crear una propiedad para editar los datos y características? es inseguro
+
+En general vas muy bien. Bien estructurado, entendible y vas cumpliendo las rúbricas. Solo espero que sepas justificar todo si los profesores te consultan jaja
 */
 //==============================================================================================================================//
     public class Datos
@@ -30,20 +34,11 @@ Datos:
             this.Edad = edad;
         }
 
-        public string Tipo { get => tipo; set => tipo = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
-        public string Apodo { get => apodo; set => apodo = value; }
-        public DateTime FechaDeNacimiento { get => fechaDeNacimiento; set => fechaDeNacimiento = value; }
-        public int Edad 
-        { 
-            get => edad; 
-            set 
-            { 
-                if (value < 0 || value > 300)
-                    throw new ArgumentOutOfRangeException("Edad debe estar entre 0 y 300.");
-                edad = value; 
-            } 
-        }
+        public string Tipo { get => tipo; private set => tipo = value; }
+        public string Nombre { get => nombre; private set => nombre = value; }
+        public string Apodo { get => apodo; private set => apodo = value; }
+        public DateTime FechaDeNacimiento { get => fechaDeNacimiento; private set => fechaDeNacimiento = value; }
+        public int Edad { get => edad; private set => edad = value; }
     }
 //==============================================================================================================================//
 }

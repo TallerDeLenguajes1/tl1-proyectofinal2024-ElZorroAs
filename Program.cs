@@ -17,51 +17,24 @@ namespace Personajes
     {
         static void Main(string[] args)
         {
-            // Cambiar el tamaño de la consola para demostración
-            //Console.SetWindowSize(100, 50);
             Console.WriteLine("\n\n\n\n\n");
             // Mostrar ASCII art de bienvenida
-            FuncionesUtiles.MostrarAsciiArtBienvenida(@"
- _                  ____          _          _           
-| |       __ _     / ___|  _ __  (_)   ___  | |_    __ _ 
-| |      / _` |   | |  _  | '__| | |  / _ \ | __|  / _` |
-| |___  | (_| |   | |_| | | |    | | |  __/ | |_  | (_| |
-|_____|  \__,_|    \____| |_|    |_|  \___|  \__|  \__,_|
-            ");
+            FuncionesUtiles.MostrarAsciiArtBienvenida(1);
 
-            FuncionesUtiles.MostrarAsciiArtBienvenida(@"
- ____           _ 
-|  _ \    ___  | |
-| | | |  / _ \ | |
-| |_| | |  __/ | |
-|____/   \___| |_|
-            ");
+            FuncionesUtiles.MostrarAsciiArtBienvenida(2);
 
-            FuncionesUtiles.MostrarAsciiArtBienvenida(@"
- ___                                              _                
-|_ _|  _ __   __   __   ___     ___    __ _    __| |   ___    _ __ 
- | |  | '_ \  \ \ / /  / _ \   / __|  / _` |  / _` |  / _ \  | '__|
- | |  | | | |  \ V /  | (_) | | (__  | (_| | | (_| | | (_) | | |   
-|___| |_| |_|   \_/    \___/   \___|  \__,_|  \__,_|  \___/  |_|
-            ");
-
-            // Texto del menú
-            string titulo = "¡La Leyenda del Reino Carmesí!";
-            string opcion1 = "1. Empezar nueva partida";
-            string opcion2 = "2. Cargar partida guardada";
-            string opcion3 = "3. Salir";
-
+            FuncionesUtiles.MostrarAsciiArtBienvenida(3);
 
             // Centrar el título del menú
-            FuncionesUtiles.CentrarTexto(titulo);
+            FuncionesUtiles.CentrarTexto("La Leyenda del Reino Carmesí!");
 
             // Espacio en blanco entre el título y las opciones
             Console.WriteLine();
 
             // Centrar cada opción del menú
-            FuncionesUtiles.CentrarTexto(opcion1);
-            FuncionesUtiles.CentrarTexto(opcion2);
-            FuncionesUtiles.CentrarTexto(opcion3);
+            FuncionesUtiles.CentrarTexto("1. Empezar nueva partida");
+            FuncionesUtiles.CentrarTexto("2. Elegir personajes");
+            FuncionesUtiles.CentrarTexto("3. Salir");
 
             Console.WriteLine("\n\n\n\n");
             // Pausa para ver el mensaje antes de continuar

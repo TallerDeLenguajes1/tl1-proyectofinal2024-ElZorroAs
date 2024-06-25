@@ -2,18 +2,18 @@
 
 namespace Personajes
 {
-//==============================================================================================================================//
-/*
-1ra parte Generación de personaje:
-Datos:
-    velocidad;  // 1 a 10
-    destreza;   //1 a 5
-    fuerza;     //1 a 10
-    Nivel;      //1 a 10
-    Armadura;   //1 a 10
-    Salud:      //100
-*/
-//==============================================================================================================================//
+    //==============================================================================================================================//
+    /*
+    1ra parte Generación de personaje:
+    Datos:
+        velocidad;  // 1 a 10
+        destreza;   //1 a 5
+        fuerza;     //1 a 10
+        Nivel;      //1 a 10
+        Armadura;   //1 a 10
+        Salud:      //100
+    */
+    //==============================================================================================================================//
     public class Caracteristicas
     {
         private int velocidad; // 1 a 10
@@ -37,69 +37,38 @@ Datos:
         public int Velocidad
         {
             get => velocidad;
-            set
-            {
-                if (value < 1 || value > 10)
-                    throw new ArgumentOutOfRangeException("Velocidad debe estar entre 1 y 10.");
-                velocidad = value;
-            }
+            private set => velocidad = value;
         }
+
         public int Destreza
         {
             get => destreza;
-            set
-            {
-                if (value < 1 || value > 5)
-                    throw new ArgumentOutOfRangeException("Destreza debe estar entre 1 y 5.");
-                destreza = value;
-            }
+            private set => destreza = value;
         }
+
         public int Fuerza
         {
             get => fuerza;
-            set
-            {
-                if (value < 1 || value > 10)
-                    throw new ArgumentOutOfRangeException("Fuerza debe estar entre 1 y 10.");
-                fuerza = value;
-            }
+            private set => fuerza = value;
         }
 
         public int Nivel
         {
             get => nivel;
-            set
-            {
-                if (value < 1 || value > 10)
-                    throw new ArgumentOutOfRangeException("Nivel debe estar entre 1 y 10.");
-                nivel = value;
-            }
+            private set => nivel = value;
         }
+
         public int Armadura
         {
             get => armadura;
-            set
-            {
-                if (value < 1 || value > 10)
-                    throw new ArgumentOutOfRangeException("Armadura debe estar entre 1 y 10.");
-                armadura = value;
-            }
+            private set => armadura = value;
         }
+
         public int Salud
         {
             get => salud;
-            private set { salud = value > 100 ? 100 : (value < 0 ? 0 : value); }
-        }
-
-        public void ReducirSalud(int cantidad)
-        {
-            Salud -= cantidad;
-        }
-
-        public void IncrementarSalud(int cantidad)
-        {
-            Salud += cantidad;
+            private set => salud = value;
         }
     }
-//==============================================================================================================================//
+    //==============================================================================================================================//
 }

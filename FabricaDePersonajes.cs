@@ -22,7 +22,7 @@ namespace Personajes
             string nombre = nombres[random.Next(nombres.Length)];
             string apodo = apodos[random.Next(apodos.Length)];
             DateTime fechaDeNacimiento = GenerarFechaAleatoria();
-            int edad = random.Next(0, 301);
+            int edad = CalcularEdad(fechaDeNacimiento);
 
             Datos datos = new Datos(tipo, nombre, apodo, fechaDeNacimiento, edad);
 
@@ -47,6 +47,19 @@ namespace Personajes
 
             return new DateTime(year, month, day);
         }
+
+        private static int CalcularEdad(DateTime fechaDeNacimiento)
+    {
+        DateTime fechaActual = DateTime.Now;
+        int edad = fechaActual.Year - fechaDeNacimiento.Year;
+
+        if (fechaActual.Month < fechaDeNacimiento.Month || (fechaActual.Month == fechaDeNacimiento.Month && fechaActual.Day < fechaDeNacimiento.Day))
+        {
+            edad--;
+        }
+
+        return edad;
+    }
     }
 //==============================================================================================================================//
 }

@@ -19,7 +19,7 @@ namespace Personajes
         }
 
          // Método para mostrar ASCII art de bienvenida con efecto de escritura
-        public static void MostrarAsciiArtBienvenida(string asciiArt)
+        public static void MostrarAsciiArtCentrado(string asciiArt)
         {
             Console.ForegroundColor = ConsoleColor.DarkRed;
 
@@ -36,5 +36,48 @@ namespace Personajes
             Console.ResetColor();
             Console.WriteLine(); // Salto de línea al final del ASCII art
         }
+    //Metodo para AsciiArt y que quede mas limpio el titulo
+        public static void MostrarAsciiArtBienvenida(int opcion)
+    {
+        string asciiArt = "";
+
+        switch (opcion)
+        {
+            case 1:
+                asciiArt = @"
+ _                  ____          _          _           
+| |       __ _     / ___|  _ __  (_)   ___  | |_    __ _ 
+| |      / _` |   | |  _  | '__| | |  / _ \ | __|  / _` |
+| |___  | (_| |   | |_| | | |    | | |  __/ | |_  | (_| |
+|_____|  \__,_|    \____| |_|    |_|  \___|  \__|  \__,_|
+                ";
+
+                break;
+            case 2:
+                asciiArt = @"
+ ____           _ 
+|  _ \    ___  | |
+| | | |  / _ \ | |
+| |_| | |  __/ | |
+|____/   \___| |_|
+                ";
+
+                break;
+            case 3:
+                asciiArt = @"
+ ___                                              _                
+|_ _|  _ __   __   __   ___     ___    __ _    __| |   ___    _ __ 
+ | |  | '_ \  \ \ / /  / _ \   / __|  / _` |  / _` |  / _ \  | '__|
+ | |  | | | |  \ V /  | (_) | | (__  | (_| | | (_| | | (_) | | |   
+|___| |_| |_|   \_/    \___/   \___|  \__,_|  \__,_|  \___/  |_|
+                ";
+
+                break;
+            default:
+                asciiArt = "Opción no válida.";
+                break;
+        }
+        MostrarAsciiArtCentrado(asciiArt);
+    }
     }
 }
