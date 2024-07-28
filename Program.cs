@@ -17,8 +17,15 @@ namespace EspacioPersonaje
     {
         static void Main(string[] args)
         {
+            /*
+            1) Verificar al comienzo del Juego si existe el archivo de personajes:
+                A. Si existe y tiene datos cargar los personajes desde el archivo existente.
+                B. Si no existe generar 10 personajes utilizando la clase FabricaDePersonajes y
+                guárdelos en el archivo de personajes usando la clase PersonajesJson.
+            2) Muestre por pantalla los datos y características de los personajes cargados. 
+            */
 
-             string nombreArchivo = "personajes.json";
+            string nombreArchivo = "personajes.json";
             List<Personaje> personajes;
 
             if (PersonajeJson.Existe(nombreArchivo))

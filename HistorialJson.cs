@@ -1,6 +1,6 @@
 //==============================================================================================================================//
 /*
-1ra Parte Persistencia de datos (Lectura y guardado de Json):
+2ra Parte Persistencia de datos (Lectura y guardado de Json)
 */
 //==============================================================================================================================//
 
@@ -9,43 +9,46 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 namespace EspacioPersonaje;
-
 /*
-1) Armar una clase llamada PersonajesJson para guardar y leer desde un archivo Json
+1) Armar una clase llamada HistorialJson para guardar y leer desde un archivo Json
 */
-public class PersonajeJson
+public class HistorialJson
 {
     /*
-    2) Crear un método llamado GuardarPersonajes que reciba una lista de personajes, el
-    nombre del archivo y lo guarde en formato Json.
+    2) Crear un método llamado GuardarGanador que reciba el personaje ganador e
+    información relevante de las partidas, el nombre del archivo y lo guarde en formato Json.
     */
-    public static void GuardarPersonajes(List<Personaje> personajes, string nombreArchivo)
+    public void GuardarGanador(Personaje ganador, DateTime fecha, string informacion, string nombreArchivo)
     {
         try
         {
+            List<Personaje> ganadores = Existe(nombreArchivo) ? LeerGanadores(nombreArchivo) : new List<Personaje>();
+            ganadores.Add(ganador);
+
             var opciones = new JsonSerializerOptions { WriteIndented = true };
             using (var archivo = new FileStream(nombreArchivo, FileMode.Create))
             {
                 using (var strWriter = new StreamWriter(archivo))
                 {
-                    string json = JsonSerializer.Serialize(personajes, opciones);
+                    string json = JsonSerializer.Serialize(ganadores, opciones);
                     strWriter.WriteLine(json);
-                    strWriter.Flush();
                 }
             }
+            Console.WriteLine($"Datos guardados en '{nombreArchivo}'.");
         }
         catch (Exception e)
         {
             Console.WriteLine($"Error al guardar el archivo '{nombreArchivo}': {e.Message}");
         }
     }
+
     /*
-    3) Crear un método llamado LeerPersonajes que reciba un nombre de archivo y retorne la
-    lista de personajes incluidos en el son. 
+    3) Crear un método llamado LeerGanadores que reciba un nombre de archivo y retorne la
+    lista de personajes ganadores e información relevante incluidos en el Json.
     */
-    public static List<Personaje> LeerPersonajes(string nombreArchivo)
+    public List<Personaje> LeerGanadores(string nombreArchivo)
     {
-        List<Personaje> personajes = new List<Personaje>();
+        List<Personaje> ganadores = new List<Personaje>();
         try
         {
             using (var archivoOpen = new FileStream(nombreArchivo, FileMode.Open))
@@ -53,7 +56,7 @@ public class PersonajeJson
                 using (var strReader = new StreamReader(archivoOpen))
                 {
                     string json = strReader.ReadToEnd();
-                    personajes = JsonSerializer.Deserialize<List<Personaje>>(json);
+                    ganadores = JsonSerializer.Deserialize<List<Personaje>>(json);
                 }
             }
         }
@@ -61,13 +64,13 @@ public class PersonajeJson
         {
             Console.WriteLine($"Error al leer el archivo '{nombreArchivo}': {e.Message}");
         }
-        return personajes;
+        return ganadores;
     }
     /*
     4) Crear un método llamado Existe que reciba un nombre de archivo y que retorne un True
     si existe y tiene datos o False en caso contrario. 
     */
-    public static bool Existe(string nombreArchivo)
+    public bool Existe(string nombreArchivo)
     {
         try
         {
