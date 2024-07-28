@@ -1,0 +1,182 @@
+[
+  {
+    "Datos": {
+      "Tipo": "Elfo",
+      "Nombre": "Aragorn",
+      "Apodo": "El \u00C1gil",
+      "FechaDeNacimiento": "1999-03-25T00:00:00",
+      "Edad": 25
+    },
+    "Velocidad": 1,
+    "Caracteristicas": {
+      "Velocidad": 1,
+      "Destreza": 1,
+      "Fuerza": 8,
+      "Nivel": 10,
+      "Armadura": 8,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Orco",
+      "Nombre": "Frodo",
+      "Apodo": "El Justo",
+      "FechaDeNacimiento": "1895-12-02T00:00:00",
+      "Edad": 128
+    },
+    "Velocidad": 3,
+    "Caracteristicas": {
+      "Velocidad": 3,
+      "Destreza": 5,
+      "Fuerza": 6,
+      "Nivel": 2,
+      "Armadura": 4,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Humano",
+      "Nombre": "Frodo",
+      "Apodo": "El Oscuro",
+      "FechaDeNacimiento": "1892-10-30T00:00:00",
+      "Edad": 131
+    },
+    "Velocidad": 10,
+    "Caracteristicas": {
+      "Velocidad": 10,
+      "Destreza": 1,
+      "Fuerza": 1,
+      "Nivel": 4,
+      "Armadura": 1,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Orco",
+      "Nombre": "Sam",
+      "Apodo": "El Sabio",
+      "FechaDeNacimiento": "1868-10-06T00:00:00",
+      "Edad": 155
+    },
+    "Velocidad": 9,
+    "Caracteristicas": {
+      "Velocidad": 9,
+      "Destreza": 4,
+      "Fuerza": 3,
+      "Nivel": 1,
+      "Armadura": 6,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Humano",
+      "Nombre": "Sam",
+      "Apodo": "El \u00C1gil",
+      "FechaDeNacimiento": "1954-05-20T00:00:00",
+      "Edad": 70
+    },
+    "Velocidad": 3,
+    "Caracteristicas": {
+      "Velocidad": 3,
+      "Destreza": 2,
+      "Fuerza": 4,
+      "Nivel": 2,
+      "Armadura": 7,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Enano",
+      "Nombre": "Frodo",
+      "Apodo": "El Valiente",
+      "FechaDeNacimiento": "1806-02-02T00:00:00",
+      "Edad": 218
+    },
+    "Velocidad": 7,
+    "Caracteristicas": {
+      "Velocidad": 7,
+      "Destreza": 5,
+      "Fuerza": 2,
+      "Nivel": 2,
+      "Armadura": 9,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Orco",
+      "Nombre": "Gimli",
+      "Apodo": "El \u00C1gil",
+      "FechaDeNacimiento": "1960-03-08T00:00:00",
+      "Edad": 64
+    },
+    "Velocidad": 1,
+    "Caracteristicas": {
+      "Velocidad": 1,
+      "Destreza": 2,
+      "Fuerza": 5,
+      "Nivel": 2,
+      "Armadura": 10,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Orco",
+      "Nombre": "Sam",
+      "Apodo": "El Oscuro",
+      "FechaDeNacimiento": "1832-04-28T00:00:00",
+      "Edad": 192
+    },
+    "Velocidad": 8,
+    "Caracteristicas": {
+      "Velocidad": 8,
+      "Destreza": 4,
+      "Fuerza": 1,
+      "Nivel": 2,
+      "Armadura": 8,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Elfo",
+      "Nombre": "Legolas",
+      "Apodo": "El Valiente",
+      "FechaDeNacimiento": "1918-12-21T00:00:00",
+      "Edad": 105
+    },
+    "Velocidad": 5,
+    "Caracteristicas": {
+      "Velocidad": 5,
+      "Destreza": 3,
+      "Fuerza": 1,
+      "Nivel": 10,
+      "Armadura": 6,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Humano",
+      "Nombre": "Gimli",
+      "Apodo": "El \u00C1gil",
+      "FechaDeNacimiento": "1749-11-07T00:00:00",
+      "Edad": 274
+    },
+    "Velocidad": 5,
+    "Caracteristicas": {
+      "Velocidad": 5,
+      "Destreza": 2,
+      "Fuerza": 10,
+      "Nivel": 5,
+      "Armadura": 8,
+      "Salud": 100
+    }
+  }
+]

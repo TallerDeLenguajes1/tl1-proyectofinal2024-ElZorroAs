@@ -1,4 +1,4 @@
-﻿namespace Personajes;
+﻿namespace EspacioPersonaje;
 //==============================================================================================================================//
 /*
 1ra parte Generación de personaje:

@@ -1,4 +1,4 @@
-namespace Personajes
+namespace EspacioPersonaje
 {
     public static partial class FuncionesUtiles
     {

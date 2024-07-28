@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace Personajes
+namespace EspacioPersonaje
 {
     //==============================================================================================================================//
     /*
@@ -17,6 +17,35 @@ namespace Personajes
     {
         static void Main(string[] args)
         {
+
+             string nombreArchivo = "personajes.json";
+            List<Personaje> personajes;
+
+            if (PersonajeJson.Existe(nombreArchivo))
+            {
+                personajes = PersonajeJson.LeerPersonajes(nombreArchivo);
+                Console.WriteLine("Personajes cargados desde el archivo existente:");
+            }
+            else
+            {
+                personajes = new List<Personaje>();
+                FabricaDePersonajes fabrica = new FabricaDePersonajes();
+                for (int i = 0; i < 10; i++)
+                {
+                    personajes.Add(FabricaDePersonajes.CrearPersonajeAleatorio());
+                }
+
+                PersonajeJson.GuardarPersonajes(personajes, nombreArchivo);
+                Console.WriteLine("Se generaron 10 nuevos personajes y se guardaron en el archivo.");
+            }
+            int contador=1;
+             foreach (var personaje in personajes)
+            {
+                personaje.MostrarInformacion(contador);
+                contador++;
+            }
+
+            /*
             Console.WriteLine("\n\n\n\n\n");
             // Mostrar ASCII art de bienvenida
             FuncionesUtiles.MostrarAsciiArtBienvenida(1);
@@ -54,6 +83,7 @@ namespace Personajes
                 Console.ReadLine();
                 Console.Clear();
             }
+            */
         }
     }
     //==============================================================================================================================//
