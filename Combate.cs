@@ -36,7 +36,9 @@ Mecánica del Juego
                 && personajeRival.Caracteristicas.Salud > 0
             )
             {
+                Console.ForegroundColor = ConsoleColor.Blue;
                 // Turno del usuario
+                FuncionesUtiles.CentrarTexto("[=======================================================]");
                 FuncionesUtiles.CentrarTexto("Turno del usuario:");
                 TurnoUsuario();
 
@@ -55,10 +57,14 @@ Mecánica del Juego
                         );
                     }
                     Beneficiar(personajeUsuario); // Beneficia al Pokémon del usuario
+                    Console.ResetColor();
                     break;
                 }
+                
 
+                Console.ForegroundColor = ConsoleColor.Red;
                 // Turno del rival
+                FuncionesUtiles.CentrarTexto("[=======================================================]");
                 FuncionesUtiles.CentrarTexto("Turno del rival:");
                 TurnoRival();
 
@@ -81,7 +87,9 @@ Mecánica del Juego
             {
                 MenuBatalla(personajes); // Muestra el menú de batalla para continuar o guardar
             }
+            Console.ResetColor();
         }
+        
 
         // Método para mostrar el menú de batalla y permitir al usuario continuar, guardar o salir
         private void MenuBatalla(List<Personaje> personajes)
@@ -134,7 +142,7 @@ Mecánica del Juego
             int seleccion = 0;
             while (seleccion < 1 || seleccion > personajeUsuario.Datos.Habilidades.Count)
             {
-                FuncionesUtiles.CentrarTexto("[========== Selecciona el número de la habilidad ==========]");
+                FuncionesUtiles.CentrarTexto("[========= Selecciona el número de la habilidad =========]");
                 if (int.TryParse(Console.ReadLine(), out seleccion) && seleccion >= 1 && seleccion <= personajeUsuario.Datos.Habilidades.Count)
                 {
                     Habilidades habilidadSeleccionada = personajeUsuario.Datos.Habilidades[seleccion - 1];
@@ -142,14 +150,7 @@ Mecánica del Juego
 
                     int danio = personajeUsuario.Caracteristicas.Calculardanio(habilidadSeleccionada);
 
-                    // Mensajes de depuración antes de actualizar la salud
-                    Console.WriteLine($"[DEBUG] Salud del rival antes de actualizar: {personajeRival.Caracteristicas.Salud}");
-                    Console.WriteLine($"[DEBUG] Daño infligido: {danio}");
-
                     personajeRival.Caracteristicas.ActualizarSalud(danio);
-
-                    // Mensajes de depuración después de actualizar la salud
-                    Console.WriteLine($"[DEBUG] Salud del rival después de actualizar: {personajeRival.Caracteristicas.Salud}");
 
                     FuncionesUtiles.CentrarTexto($"La salud del personaje rival ahora es: {personajeRival.Caracteristicas.Salud}");
                     FuncionesUtiles.CentrarTexto($"[=======================================================]");

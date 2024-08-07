@@ -54,7 +54,7 @@ namespace EspacioPersonaje
                contador++;
             }
             */
-            
+
             int opcion;
             do
             {
@@ -101,10 +101,16 @@ namespace EspacioPersonaje
                             var (usuario, rival) = eleccion.ElegirPersonajes(personajes);    // Elegir un personaje al usuario
 
                             // Muestra los personajes seleccionados y realiza la batalla
+
+                            Console.ForegroundColor = ConsoleColor.Blue;
                             FuncionesUtiles.CentrarTexto("Tu personaje:");
                             usuario.MostrarInformacion();
+                            Console.ResetColor();
+
+                            Console.ForegroundColor = ConsoleColor.Red;
                             FuncionesUtiles.CentrarTexto("Personaje del rival:");
                             rival.MostrarInformacion();
+                            Console.ResetColor();
 
                             Combate combate = new Combate(usuario, rival);
 
