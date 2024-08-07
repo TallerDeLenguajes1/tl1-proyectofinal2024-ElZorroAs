@@ -2,230 +2,14 @@
   {
     "Datos": {
       "Tipo": "Mago",
-      "Nombre": "Leblanc",
-      "Apodo": "El Destructor",
-      "FechaDeNacimiento": "1975-01-22T00:00:00",
-      "Edad": 49,
-      "Habilidades": [
-        {
-          "Nombre": "Sigilo de la Malevolencia",
-          "Ataque": 7
-        },
-        {
-          "Nombre": "Distorsi\u00F3n",
-          "Ataque": 2
-        },
-        {
-          "Nombre": "Cadenas Et\u00E9reas",
-          "Ataque": 7
-        },
-        {
-          "Nombre": "Mim\u00E9tica",
-          "Ataque": 6
-        }
-      ]
-    },
-    "Velocidad": 2,
-    "Caracteristicas": {
-      "Velocidad": 2,
-      "Destreza": 1,
-      "Fuerza": 9,
-      "Nivel": 7,
-      "Armadura": 8,
-      "Salud": 100
-    }
-  },
-  {
-    "Datos": {
-      "Tipo": "Mago",
-      "Nombre": "Swain",
-      "Apodo": "La Ilusionista",
-      "FechaDeNacimiento": "1999-07-28T00:00:00",
-      "Edad": 25,
-      "Habilidades": [
-        {
-          "Nombre": "Mano de la Muerte",
-          "Ataque": 10
-        },
-        {
-          "Nombre": "Visi\u00F3n Imperial",
-          "Ataque": 5
-        },
-        {
-          "Nombre": "Mutilador",
-          "Ataque": 2
-        },
-        {
-          "Nombre": "Nunca M\u00E1s",
-          "Ataque": 2
-        }
-      ]
-    },
-    "Velocidad": 9,
-    "Caracteristicas": {
-      "Velocidad": 9,
-      "Destreza": 1,
-      "Fuerza": 4,
-      "Nivel": 4,
-      "Armadura": 4,
-      "Salud": 100
-    }
-  },
-  {
-    "Datos": {
-      "Tipo": "Guerrero",
-      "Nombre": "Aatrox",
-      "Apodo": "El Hechicero",
-      "FechaDeNacimiento": "1847-09-07T00:00:00",
-      "Edad": 176,
-      "Habilidades": [
-        {
-          "Nombre": "La Espada Darkin",
-          "Ataque": 6
-        },
-        {
-          "Nombre": "Cadenas Infernales",
-          "Ataque": 7
-        },
-        {
-          "Nombre": "Desata su Poder",
-          "Ataque": 2
-        },
-        {
-          "Nombre": "Luz Umbr\u00EDa",
-          "Ataque": 9
-        }
-      ]
-    },
-    "Velocidad": 8,
-    "Caracteristicas": {
-      "Velocidad": 8,
-      "Destreza": 5,
-      "Fuerza": 3,
-      "Nivel": 8,
-      "Armadura": 4,
-      "Salud": 100
-    }
-  },
-  {
-    "Datos": {
-      "Tipo": "Mago",
-      "Nombre": "Aatrox",
-      "Apodo": "El Hechicero",
-      "FechaDeNacimiento": "1761-06-19T00:00:00",
-      "Edad": 263,
-      "Habilidades": [
-        {
-          "Nombre": "La Espada Darkin",
-          "Ataque": 7
-        },
-        {
-          "Nombre": "Cadenas Infernales",
-          "Ataque": 10
-        },
-        {
-          "Nombre": "Desata su Poder",
-          "Ataque": 2
-        },
-        {
-          "Nombre": "Luz Umbr\u00EDa",
-          "Ataque": 5
-        }
-      ]
-    },
-    "Velocidad": 4,
-    "Caracteristicas": {
-      "Velocidad": 4,
-      "Destreza": 3,
-      "Fuerza": 4,
-      "Nivel": 1,
-      "Armadura": 8,
-      "Salud": 100
-    }
-  },
-  {
-    "Datos": {
-      "Tipo": "Guerrero",
-      "Nombre": "Leblanc",
-      "Apodo": "El Destructor",
-      "FechaDeNacimiento": "1975-03-02T00:00:00",
-      "Edad": 49,
-      "Habilidades": [
-        {
-          "Nombre": "Sigilo de la Malevolencia",
-          "Ataque": 8
-        },
-        {
-          "Nombre": "Distorsi\u00F3n",
-          "Ataque": 9
-        },
-        {
-          "Nombre": "Cadenas Et\u00E9reas",
-          "Ataque": 3
-        },
-        {
-          "Nombre": "Mim\u00E9tica",
-          "Ataque": 1
-        }
-      ]
-    },
-    "Velocidad": 5,
-    "Caracteristicas": {
-      "Velocidad": 5,
-      "Destreza": 4,
-      "Fuerza": 9,
-      "Nivel": 4,
-      "Armadura": 6,
-      "Salud": 100
-    }
-  },
-  {
-    "Datos": {
-      "Tipo": "Mago",
-      "Nombre": "Aatrox",
-      "Apodo": "El Conquistador",
-      "FechaDeNacimiento": "1844-11-25T00:00:00",
-      "Edad": 179,
-      "Habilidades": [
-        {
-          "Nombre": "La Espada Darkin",
-          "Ataque": 4
-        },
-        {
-          "Nombre": "Cadenas Infernales",
-          "Ataque": 8
-        },
-        {
-          "Nombre": "Desata su Poder",
-          "Ataque": 4
-        },
-        {
-          "Nombre": "Luz Umbr\u00EDa",
-          "Ataque": 8
-        }
-      ]
-    },
-    "Velocidad": 10,
-    "Caracteristicas": {
-      "Velocidad": 10,
-      "Destreza": 5,
-      "Fuerza": 6,
-      "Nivel": 5,
-      "Armadura": 6,
-      "Salud": 100
-    }
-  },
-  {
-    "Datos": {
-      "Tipo": "Guerrero",
       "Nombre": "Pantheon",
       "Apodo": "El Hechicero",
-      "FechaDeNacimiento": "1980-05-29T00:00:00",
-      "Edad": 44,
+      "FechaDeNacimiento": "1999-11-27T00:00:00",
+      "Edad": 24,
       "Habilidades": [
         {
           "Nombre": "Cometa",
-          "Ataque": 4
+          "Ataque": 9
         },
         {
           "Nombre": "Escudo del Alba",
@@ -233,21 +17,237 @@
         },
         {
           "Nombre": "Lanza Suprema",
-          "Ataque": 3
+          "Ataque": 9
         },
         {
           "Nombre": "Asalto Aegis",
-          "Ataque": 1
+          "Ataque": 2
         }
       ]
     },
     "Velocidad": 4,
     "Caracteristicas": {
       "Velocidad": 4,
-      "Destreza": 5,
+      "Destreza": 4,
+      "Fuerza": 6,
+      "Nivel": 5,
+      "Armadura": 4,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Mago",
+      "Nombre": "Swain",
+      "Apodo": "El Hechicero",
+      "FechaDeNacimiento": "2005-09-21T00:00:00",
+      "Edad": 18,
+      "Habilidades": [
+        {
+          "Nombre": "Mano de la Muerte",
+          "Ataque": 10
+        },
+        {
+          "Nombre": "Visi\u00F3n Imperial",
+          "Ataque": 8
+        },
+        {
+          "Nombre": "Mutilador",
+          "Ataque": 1
+        },
+        {
+          "Nombre": "Nunca M\u00E1s",
+          "Ataque": 9
+        }
+      ]
+    },
+    "Velocidad": 7,
+    "Caracteristicas": {
+      "Velocidad": 7,
+      "Destreza": 2,
+      "Fuerza": 6,
+      "Nivel": 7,
+      "Armadura": 6,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Mago",
+      "Nombre": "Leblanc",
+      "Apodo": "La Ilusionista",
+      "FechaDeNacimiento": "1869-03-30T00:00:00",
+      "Edad": 155,
+      "Habilidades": [
+        {
+          "Nombre": "Sigilo de la Malevolencia",
+          "Ataque": 9
+        },
+        {
+          "Nombre": "Distorsi\u00F3n",
+          "Ataque": 5
+        },
+        {
+          "Nombre": "Cadenas Et\u00E9reas",
+          "Ataque": 7
+        },
+        {
+          "Nombre": "Mim\u00E9tica",
+          "Ataque": 9
+        }
+      ]
+    },
+    "Velocidad": 7,
+    "Caracteristicas": {
+      "Velocidad": 7,
+      "Destreza": 2,
+      "Fuerza": 8,
+      "Nivel": 1,
+      "Armadura": 9,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Mago",
+      "Nombre": "Swain",
+      "Apodo": "El Destructor",
+      "FechaDeNacimiento": "1759-10-13T00:00:00",
+      "Edad": 264,
+      "Habilidades": [
+        {
+          "Nombre": "Mano de la Muerte",
+          "Ataque": 9
+        },
+        {
+          "Nombre": "Visi\u00F3n Imperial",
+          "Ataque": 6
+        },
+        {
+          "Nombre": "Mutilador",
+          "Ataque": 1
+        },
+        {
+          "Nombre": "Nunca M\u00E1s",
+          "Ataque": 8
+        }
+      ]
+    },
+    "Velocidad": 10,
+    "Caracteristicas": {
+      "Velocidad": 10,
+      "Destreza": 1,
+      "Fuerza": 10,
+      "Nivel": 5,
+      "Armadura": 7,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Mago",
+      "Nombre": "Aatrox",
+      "Apodo": "El Destructor",
+      "FechaDeNacimiento": "1960-10-28T00:00:00",
+      "Edad": 63,
+      "Habilidades": [
+        {
+          "Nombre": "La Espada Darkin",
+          "Ataque": 10
+        },
+        {
+          "Nombre": "Cadenas Infernales",
+          "Ataque": 2
+        },
+        {
+          "Nombre": "Desata su Poder",
+          "Ataque": 9
+        },
+        {
+          "Nombre": "Luz Umbr\u00EDa",
+          "Ataque": 4
+        }
+      ]
+    },
+    "Velocidad": 2,
+    "Caracteristicas": {
+      "Velocidad": 2,
+      "Destreza": 3,
       "Fuerza": 5,
-      "Nivel": 10,
+      "Nivel": 2,
       "Armadura": 5,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Guerrero",
+      "Nombre": "Aatrox",
+      "Apodo": "El Hechicero",
+      "FechaDeNacimiento": "1784-09-06T00:00:00",
+      "Edad": 239,
+      "Habilidades": [
+        {
+          "Nombre": "La Espada Darkin",
+          "Ataque": 6
+        },
+        {
+          "Nombre": "Cadenas Infernales",
+          "Ataque": 10
+        },
+        {
+          "Nombre": "Desata su Poder",
+          "Ataque": 4
+        },
+        {
+          "Nombre": "Luz Umbr\u00EDa",
+          "Ataque": 4
+        }
+      ]
+    },
+    "Velocidad": 1,
+    "Caracteristicas": {
+      "Velocidad": 1,
+      "Destreza": 3,
+      "Fuerza": 3,
+      "Nivel": 7,
+      "Armadura": 2,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Guerrero",
+      "Nombre": "Leblanc",
+      "Apodo": "El Destructor",
+      "FechaDeNacimiento": "1872-12-09T00:00:00",
+      "Edad": 151,
+      "Habilidades": [
+        {
+          "Nombre": "Sigilo de la Malevolencia",
+          "Ataque": 6
+        },
+        {
+          "Nombre": "Distorsi\u00F3n",
+          "Ataque": 8
+        },
+        {
+          "Nombre": "Cadenas Et\u00E9reas",
+          "Ataque": 5
+        },
+        {
+          "Nombre": "Mim\u00E9tica",
+          "Ataque": 8
+        }
+      ]
+    },
+    "Velocidad": 4,
+    "Caracteristicas": {
+      "Velocidad": 4,
+      "Destreza": 2,
+      "Fuerza": 2,
+      "Nivel": 10,
+      "Armadura": 1,
       "Salud": 100
     }
   }

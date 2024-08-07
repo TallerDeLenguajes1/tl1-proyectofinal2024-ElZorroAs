@@ -57,7 +57,7 @@ namespace EspacioPersonaje
 
             int opcion;
             do
-            {
+            {    
                 Console.WriteLine("\n\n\n\n\n");
                 // Mostrar ASCII art de bienvenida
                 FuncionesUtiles.MostrarAsciiArtBienvenida(1);

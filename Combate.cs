@@ -3,15 +3,15 @@ using System.Collections.Generic;
 
 namespace EspacioPersonaje
 {
-//==============================================================================================================================//
-/*
-Mecánica del Juego
-    2) El combate se realiza por turnos. Por cada turno un personaje ataca y el otro se
-    defiende.
-    3) El combate se mantiene hasta que uno es vencido (salud <= 0)
-    4) El personaje que pierde la batalla es eliminado de la competencia
-*/
-//==============================================================================================================================//
+    //==============================================================================================================================//
+    /*
+    Mecánica del Juego
+        2) El combate se realiza por turnos. Por cada turno un personaje ataca y el otro se
+        defiende.
+        3) El combate se mantiene hasta que uno es vencido (salud <= 0)
+        4) El personaje que pierde la batalla es eliminado de la competencia
+    */
+    //==============================================================================================================================//
     public class Combate
     {
         private Personaje personajeUsuario; // Personaje controlado por el usuario
@@ -60,7 +60,7 @@ Mecánica del Juego
                     Console.ResetColor();
                     break;
                 }
-                
+
 
                 Console.ForegroundColor = ConsoleColor.Red;
                 // Turno del rival
@@ -82,9 +82,31 @@ Mecánica del Juego
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 // El usuario ha ganado contra todos los rivales
                 FuncionesUtiles.CentrarTexto("\n");
-                FuncionesUtiles.CentrarTexto("[=======================================================]");
-                FuncionesUtiles.CentrarTexto("!!!Campeon de La Grieta Del Invocador!!!");
-                FuncionesUtiles.CentrarTexto("[=======================================================]");
+                FuncionesUtiles.CentrarTexto("[MMM]");
+                FuncionesUtiles.CentrarTexto("[MMMMMMMMMMMMMMMMM]");
+                FuncionesUtiles.CentrarTexto("[MMMMMMMMMMMMMMMMMMMMMMMMMMM]");
+                FuncionesUtiles.CentrarTexto("[MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM]");
+                FuncionesUtiles.CentrarTexto("[MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM]");
+                FuncionesUtiles.CentrarTexto("[MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM]");
+                FuncionesUtiles.CentrarTexto("[MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM]");
+                FuncionesUtiles.CentrarTexto("[MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM]");
+                FuncionesUtiles.CentrarTexto("[MM                                                                   MM]");
+                FuncionesUtiles.CentrarTexto("[MM              !!!Campeon de La Grieta Del Invocador!!!             MM]");
+                FuncionesUtiles.CentrarTexto("[MM                                                                   MM]");
+                FuncionesUtiles.CentrarTexto("[MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM]");
+                FuncionesUtiles.CentrarTexto("     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     ");
+                FuncionesUtiles.CentrarTexto("     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     ");
+                FuncionesUtiles.CentrarTexto("     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     ");
+                FuncionesUtiles.CentrarTexto("     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     ");
+                FuncionesUtiles.CentrarTexto("     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     ");
+                FuncionesUtiles.CentrarTexto("     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     ");
+                FuncionesUtiles.CentrarTexto("     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     ");
+                FuncionesUtiles.CentrarTexto("     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     ");
+                FuncionesUtiles.CentrarTexto("     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     ");
+                FuncionesUtiles.CentrarTexto("     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     MMM     ");
+                FuncionesUtiles.CentrarTexto("[MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM]");
+                FuncionesUtiles.CentrarTexto("[MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM]");
+                FuncionesUtiles.CentrarTexto("[MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM]");
                 Console.ResetColor();
 
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -97,7 +119,7 @@ Mecánica del Juego
             }
             Console.ResetColor();
         }
-        
+
 
         // Método para mostrar el menú de batalla y permitir al usuario continuar, guardar o salir
         private void MenuBatalla(List<Personaje> personajes)
@@ -208,5 +230,5 @@ Mecánica del Juego
             ganador.Caracteristicas.MostrarEstadisticas();
         }
     }
-//==============================================================================================================================//
+    //==============================================================================================================================//
 }

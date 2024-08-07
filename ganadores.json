@@ -423,7 +423,46 @@
         "Fuerza": 8,
         "Nivel": 7,
         "Armadura": 7,
-        "Salud": 14
+        "Salud": 100
+      }
+    },
+    "fechaVictoria": "2024-08-07"
+  },
+  {
+    "personajeGanador": {
+      "Datos": {
+        "Tipo": "Mago",
+        "Nombre": "Swain",
+        "Apodo": "El Destructor",
+        "FechaDeNacimiento": "1759-10-13T00:00:00",
+        "Edad": 264,
+        "Habilidades": [
+          {
+            "Nombre": "Mano de la Muerte",
+            "Ataque": 9
+          },
+          {
+            "Nombre": "Visi\u00F3n Imperial",
+            "Ataque": 6
+          },
+          {
+            "Nombre": "Mutilador",
+            "Ataque": 1
+          },
+          {
+            "Nombre": "Nunca M\u00E1s",
+            "Ataque": 8
+          }
+        ]
+      },
+      "Velocidad": 10,
+      "Caracteristicas": {
+        "Velocidad": 10,
+        "Destreza": 1,
+        "Fuerza": 10,
+        "Nivel": 5,
+        "Armadura": 8,
+        "Salud": 79
       }
     },
     "fechaVictoria": "2024-08-07"
