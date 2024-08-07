@@ -1,0 +1,275 @@
+[
+  {
+    "personajeGanador": {
+      "Datos": {
+        "Tipo": "Guerrero",
+        "Nombre": "Leblanc",
+        "Apodo": "El Conquistador",
+        "FechaDeNacimiento": "1821-03-22T00:00:00",
+        "Edad": 203,
+        "Habilidades": [
+          {
+            "Nombre": "Sigilo de la Malevolencia",
+            "Ataque": 8
+          },
+          {
+            "Nombre": "Distorsi\u00F3n",
+            "Ataque": 7
+          },
+          {
+            "Nombre": "Cadenas Et\u00E9reas",
+            "Ataque": 5
+          },
+          {
+            "Nombre": "Mim\u00E9tica",
+            "Ataque": 8
+          }
+        ]
+      },
+      "Velocidad": 8,
+      "Caracteristicas": {
+        "Velocidad": 8,
+        "Destreza": 4,
+        "Fuerza": 9,
+        "Nivel": 10,
+        "Armadura": 8,
+        "Salud": 100
+      }
+    },
+    "fechaVictoria": "2024-08-07"
+  },
+  {
+    "personajeGanador": {
+      "Datos": {
+        "Tipo": "Guerrero",
+        "Nombre": "Leblanc",
+        "Apodo": "El Conquistador",
+        "FechaDeNacimiento": "1821-03-22T00:00:00",
+        "Edad": 203,
+        "Habilidades": [
+          {
+            "Nombre": "Sigilo de la Malevolencia",
+            "Ataque": 8
+          },
+          {
+            "Nombre": "Distorsi\u00F3n",
+            "Ataque": 7
+          },
+          {
+            "Nombre": "Cadenas Et\u00E9reas",
+            "Ataque": 5
+          },
+          {
+            "Nombre": "Mim\u00E9tica",
+            "Ataque": 8
+          }
+        ]
+      },
+      "Velocidad": 8,
+      "Caracteristicas": {
+        "Velocidad": 8,
+        "Destreza": 5,
+        "Fuerza": 9,
+        "Nivel": 10,
+        "Armadura": 6,
+        "Salud": 100
+      }
+    },
+    "fechaVictoria": "2024-08-07"
+  },
+  {
+    "personajeGanador": {
+      "Datos": {
+        "Tipo": "Guerrero",
+        "Nombre": "Leblanc",
+        "Apodo": "El Conquistador",
+        "FechaDeNacimiento": "1821-03-22T00:00:00",
+        "Edad": 203,
+        "Habilidades": [
+          {
+            "Nombre": "Sigilo de la Malevolencia",
+            "Ataque": 8
+          },
+          {
+            "Nombre": "Distorsi\u00F3n",
+            "Ataque": 7
+          },
+          {
+            "Nombre": "Cadenas Et\u00E9reas",
+            "Ataque": 5
+          },
+          {
+            "Nombre": "Mim\u00E9tica",
+            "Ataque": 8
+          }
+        ]
+      },
+      "Velocidad": 8,
+      "Caracteristicas": {
+        "Velocidad": 8,
+        "Destreza": 4,
+        "Fuerza": 10,
+        "Nivel": 10,
+        "Armadura": 7,
+        "Salud": 100
+      }
+    },
+    "fechaVictoria": "2024-08-07"
+  },
+  {
+    "personajeGanador": {
+      "Datos": {
+        "Tipo": "Guerrero",
+        "Nombre": "Pantheon",
+        "Apodo": "La Ilusionista",
+        "FechaDeNacimiento": "1747-05-18T00:00:00",
+        "Edad": 277,
+        "Habilidades": [
+          {
+            "Nombre": "Cometa",
+            "Ataque": 6
+          },
+          {
+            "Nombre": "Escudo del Alba",
+            "Ataque": 1
+          },
+          {
+            "Nombre": "Lanza Suprema",
+            "Ataque": 9
+          },
+          {
+            "Nombre": "Asalto Aegis",
+            "Ataque": 10
+          }
+        ]
+      },
+      "Velocidad": 10,
+      "Caracteristicas": {
+        "Velocidad": 10,
+        "Destreza": 1,
+        "Fuerza": 8,
+        "Nivel": 7,
+        "Armadura": 9,
+        "Salud": 100
+      }
+    },
+    "fechaVictoria": "2024-08-07"
+  },
+  {
+    "personajeGanador": {
+      "Datos": {
+        "Tipo": "Guerrero",
+        "Nombre": "Pantheon",
+        "Apodo": "La Ilusionista",
+        "FechaDeNacimiento": "1747-05-18T00:00:00",
+        "Edad": 277,
+        "Habilidades": [
+          {
+            "Nombre": "Cometa",
+            "Ataque": 6
+          },
+          {
+            "Nombre": "Escudo del Alba",
+            "Ataque": 1
+          },
+          {
+            "Nombre": "Lanza Suprema",
+            "Ataque": 9
+          },
+          {
+            "Nombre": "Asalto Aegis",
+            "Ataque": 10
+          }
+        ]
+      },
+      "Velocidad": 10,
+      "Caracteristicas": {
+        "Velocidad": 10,
+        "Destreza": 1,
+        "Fuerza": 8,
+        "Nivel": 6,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "fechaVictoria": "2024-08-07"
+  },
+  {
+    "personajeGanador": {
+      "Datos": {
+        "Tipo": "Guerrero",
+        "Nombre": "Pantheon",
+        "Apodo": "La Ilusionista",
+        "FechaDeNacimiento": "1747-05-18T00:00:00",
+        "Edad": 277,
+        "Habilidades": [
+          {
+            "Nombre": "Cometa",
+            "Ataque": 6
+          },
+          {
+            "Nombre": "Escudo del Alba",
+            "Ataque": 1
+          },
+          {
+            "Nombre": "Lanza Suprema",
+            "Ataque": 9
+          },
+          {
+            "Nombre": "Asalto Aegis",
+            "Ataque": 10
+          }
+        ]
+      },
+      "Velocidad": 10,
+      "Caracteristicas": {
+        "Velocidad": 10,
+        "Destreza": 2,
+        "Fuerza": 8,
+        "Nivel": 6,
+        "Armadura": 10,
+        "Salud": 100
+      }
+    },
+    "fechaVictoria": "2024-08-07"
+  },
+  {
+    "personajeGanador": {
+      "Datos": {
+        "Tipo": "Guerrero",
+        "Nombre": "Pantheon",
+        "Apodo": "La Ilusionista",
+        "FechaDeNacimiento": "1747-05-18T00:00:00",
+        "Edad": 277,
+        "Habilidades": [
+          {
+            "Nombre": "Cometa",
+            "Ataque": 6
+          },
+          {
+            "Nombre": "Escudo del Alba",
+            "Ataque": 1
+          },
+          {
+            "Nombre": "Lanza Suprema",
+            "Ataque": 9
+          },
+          {
+            "Nombre": "Asalto Aegis",
+            "Ataque": 10
+          }
+        ]
+      },
+      "Velocidad": 10,
+      "Caracteristicas": {
+        "Velocidad": 10,
+        "Destreza": 1,
+        "Fuerza": 9,
+        "Nivel": 6,
+        "Armadura": 10,
+        "Salud": 92
+      }
+    },
+    "fechaVictoria": "2024-08-07"
+  }
+]

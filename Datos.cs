@@ -13,8 +13,6 @@ Datos:
     Edad;      //entre 0 a 300
 En Personaje.cs
 - por qué crear una propiedad para editar los datos y características? es inseguro
-
-En general vas muy bien. Bien estructurado, entendible y vas cumpliendo las rúbricas. Solo espero que sepas justificar todo si los profesores te consultan jaja
 */
 //==============================================================================================================================//
     public class Datos
@@ -24,14 +22,16 @@ En general vas muy bien. Bien estructurado, entendible y vas cumpliendo las rúb
         private string apodo;
         private DateTime fechaDeNacimiento;
         private int edad; //entre 0 a 300
+        private List <Habilidades> habilidades; // Habilidades de los personajes
 
-        public Datos(string tipo, string nombre, string apodo, DateTime fechaDeNacimiento, int edad)
+        public Datos(string tipo, string nombre, string apodo, DateTime fechaDeNacimiento, int edad, List <Habilidades> habilidades)
         {
             this.Tipo = tipo;
             this.Nombre = nombre;
             this.Apodo = apodo;
             this.FechaDeNacimiento = fechaDeNacimiento;
             this.Edad = edad;
+            this.Habilidades = habilidades;
         }
 
         public string Tipo { get => tipo; private set => tipo = value; }
@@ -39,6 +39,7 @@ En general vas muy bien. Bien estructurado, entendible y vas cumpliendo las rúb
         public string Apodo { get => apodo; private set => apodo = value; }
         public DateTime FechaDeNacimiento { get => fechaDeNacimiento; private set => fechaDeNacimiento = value; }
         public int Edad { get => edad; private set => edad = value; }
+        public List <Habilidades> Habilidades { get => habilidades;private set => habilidades = value; } // Habilidades de los personajes
     }
-//==============================================================================================================================//
+//==============================================================================================================================//.
 }

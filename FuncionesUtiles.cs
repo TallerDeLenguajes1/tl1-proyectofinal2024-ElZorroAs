@@ -13,6 +13,7 @@ namespace EspacioPersonaje
             if (texto.StartsWith("|___|"))
             {
                 espacios--; // Ajuste adicional a la izquierda
+                espacios--; // Ajuste adicional a la izquierda
             }
 
             Console.WriteLine(texto.PadLeft(espacios + stringWidth));
