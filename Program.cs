@@ -66,16 +66,19 @@ namespace EspacioPersonaje
 
                 FuncionesUtiles.MostrarAsciiArtBienvenida(3);
 
+                Console.ForegroundColor = ConsoleColor.Red;
                 // Centrar el título del menú
                 FuncionesUtiles.CentrarTexto("La Leyenda del Reino Carmesí!");
-
+                Console.ResetColor();
                 // Espacio en blanco entre el título y las opciones
                 Console.WriteLine();
 
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 // Centrar cada opción del menú
                 FuncionesUtiles.CentrarTexto("1. Empezar nueva partida");
                 FuncionesUtiles.CentrarTexto("2. Mostrar ganadores");
                 FuncionesUtiles.CentrarTexto("3. Salir");
+                Console.ResetColor();
 
                 Console.WriteLine("\n\n\n\n");
                 // Pausa para ver el mensaje antes de continuar

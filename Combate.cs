@@ -79,9 +79,17 @@ Mecánica del Juego
             // Verifica si el usuario ganó la batalla actual y si quedan rivales
             if (personajeUsuario.Caracteristicas.Salud > 0 && personajes.Count == 0)
             {
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 // El usuario ha ganado contra todos los rivales
+                FuncionesUtiles.CentrarTexto("\n");
+                FuncionesUtiles.CentrarTexto("[=======================================================]");
                 FuncionesUtiles.CentrarTexto("!!!Campeon de La Grieta Del Invocador!!!");
+                FuncionesUtiles.CentrarTexto("[=======================================================]");
+                Console.ResetColor();
+
+                Console.ForegroundColor = ConsoleColor.Red;
                 historialJson.GuardarGanador(personajeUsuario, DateTime.Now, "ganadores.json");
+                Console.ResetColor();
             }
             else if (personajeUsuario.Caracteristicas.Salud > 0)
             {
@@ -100,11 +108,13 @@ Mecánica del Juego
                 Eleccion eleccion = new Eleccion();
                 while (continuar)
                 {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     FuncionesUtiles.CentrarTexto("\n");
                     FuncionesUtiles.CentrarTexto("¿Desea continuar el juego?");
                     FuncionesUtiles.CentrarTexto("1. Continuar");
                     FuncionesUtiles.CentrarTexto("2. Salir");
                     string opcion = Console.ReadLine();
+                    Console.ResetColor();
 
                     switch (opcion)
                     {
