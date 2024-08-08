@@ -10,45 +10,181 @@ namespace EspacioPersonaje
     public class FabricaDePersonajes
     {
         //==============================================================================================================================//
-        // Diccionario de habilidades
         private static Random random = new Random();
 
-        private static string[] tipos = { "Guerrero", "Mago" };
-        private static string[] apodos = { "El Conquistador", "El Destructor", "El Hechicero", "La Ilusionista" };
-
-        //==============================================================================================================================//
-        //Diccionario 
-        private static Dictionary<string, List<string>> habilidades = new Dictionary<string, List<string>>()
+        private static Dictionary<string, string> tiposCampeones = new Dictionary<string, string>()
         {
-            { "Pantheon", new List<string> { "Cometa", "Escudo del Alba", "Lanza Suprema", "Asalto Aegis" } },
-            { "Aatrox", new List<string> { "La Espada Darkin", "Cadenas Infernales", "Desata su Poder", "Luz Umbría" } },
-            { "Swain", new List<string> { "Mano de la Muerte", "Visión Imperial", "Mutilador", "Nunca Más" } },
-            { "Leblanc", new List<string> { "Sigilo de la Malevolencia", "Distorsión", "Cadenas Etéreas", "Mimética" } }
+            { "Orianna", "Mage" }, // Mage
+            { "Ashe", "Marksman" }, // Marksman
+            { "Ryze", "Mage" }, // Mage
+            { "Lux", "Mage" }, // Mage
+            { "Ezreal", "Marksman" }, // Marksman
+            { "Katarina", "Assassin" }, // Assassin
+            { "Pantheon", "Fighter" }, // Fighter
+            { "Aatrox", "Fighter" }, // Fighter
+            { "Swain", "Mage" }, // Mage
+            { "Leblanc", "Mage" } // Mage
         };
-        //==============================================================================================================================//
-        public static Personaje CrearPersonajeAleatorio()
+
+        private static Dictionary<string, string> apodosCampeones = new Dictionary<string, string>()
         {
-            string tipo = tipos[random.Next(tipos.Length)];
-            string nombre = ElegirNombreAleatorio();
-            string apodo = apodos[random.Next(apodos.Length)];
+            { "Orianna", "La Doncella Mecánica" },
+            { "Ashe", "La Arquera de Hielo" },
+            { "Ryze", "El Hechicero Rúnico" },
+            { "Lux", "La Dama Luminosa" },
+            { "Ezreal", "El Explorador Pródigo" },
+            { "Katarina", "La Sinfonía Roja" },
+            { "Pantheon", "El Artesano de Guerra" },
+            { "Aatrox", "La Espada Darkin" },
+            { "Swain", "El Gran General" },
+            { "Leblanc", "La Maquiavélica" }
+        };
+
+        private static Dictionary<string, List<string>> habilidades = new Dictionary<
+            string,
+            List<string>
+        >()
+        {
+            {
+                "Orianna",
+                new List<string>
+                {
+                    "Ataque de Comando",
+                    "Protección de Comando",
+                    "Onda de Choque",
+                    "Comando: Shockwave"
+                }
+            },
+            {
+                "Ashe",
+                new List<string>
+                {
+                    "Foco de Cazadora",
+                    "Descarga de Flechas",
+                    "Visión de Águila",
+                    "Flecha de Cristal"
+                }
+            },
+            {
+                "Ryze",
+                new List<string>
+                {
+                    "Carga de Mana",
+                    "Flujo de Energía",
+                    "Ruptura de Portal",
+                    "Tormenta de Mana"
+                }
+            },
+            {
+                "Lux",
+                new List<string>
+                {
+                    "Luz Prisma",
+                    "Barrera de Luz",
+                    "Singulidad Luminosa",
+                    "Destello Final"
+                }
+            },
+            {
+                "Ezreal",
+                new List<string>
+                {
+                    "Tiro Místico",
+                    "Flujo de Energía",
+                    "Desplazamiento Arcano",
+                    "Barrage de Proyectiles"
+                }
+            },
+            {
+                "Katarina",
+                new List<string>
+                {
+                    "Voracidad",
+                    "Flujo de Sangre",
+                    "Grito de Guerra",
+                    "Loto de Muerte"
+                }
+            },
+            {
+                "Pantheon",
+                new List<string> { "Cometa", "Escudo del Alba", "Lanza Suprema", "Asalto Aegis" }
+            },
+            {
+                "Aatrox",
+                new List<string>
+                {
+                    "La Espada Darkin",
+                    "Cadenas Infernales",
+                    "Desata su Poder",
+                    "Luz Umbría"
+                }
+            },
+            {
+                "Swain",
+                new List<string>
+                {
+                    "Mano de la Muerte",
+                    "Visión Imperial",
+                    "Mutilador",
+                    "Nunca Más"
+                }
+            },
+            {
+                "Leblanc",
+                new List<string>
+                {
+                    "Sigilo de la Malevolencia",
+                    "Distorsión",
+                    "Cadenas Etéreas",
+                    "Mimética"
+                }
+            }
+        };
+
+        public Task<Personaje> CrearPersonaje(bool usarApi)
+        {
+            string nombre = null;
+            string tipo = "Desconocido";
+            string apodo = null;
             DateTime fechaDeNacimiento = GenerarFechaAleatoria();
             int edad = CalcularEdad(fechaDeNacimiento);
 
-            // Generar habilidades aleatorias
-            List<Habilidades> habilidadesPersonaje = new List<Habilidades>(); // Crear una lista para almacenar las habilidades del personaje
+            if (usarApi)
+            {
+                nombre = tiposCampeones.Keys.ElementAt(random.Next(tiposCampeones.Count));
+                tipo = tiposCampeones[nombre];
+                apodo = apodosCampeones[nombre];
+            }
+            else
+            {
+                nombre = ElegirNombreAleatorio();
+                tipo = tiposCampeones.ContainsKey(nombre) ? tiposCampeones[nombre] : "Desconocido";
+                apodo = apodosCampeones.ContainsKey(nombre)
+                    ? apodosCampeones[nombre]
+                    : "Apodo desconocido";
+            }
 
-            // Verificar si el diccionario de habilidades contiene el nombre del personaje
+            // Verificar que el tipo del personaje sea válido usando el diccionario de campeones
+            if (!tiposCampeones.Values.Contains(tipo))
+            {
+                throw new ArgumentException($"Tipo de personaje no válido: {tipo}");
+            }
+
+            // Obtener habilidades del diccionario
+            List<Habilidades> habilidadesPersonaje = new List<Habilidades>();
             if (habilidades.ContainsKey(nombre))
             {
-                // Iterar sobre cada habilidad asociada al nombre del personaje en el diccionario
                 foreach (var habilidad in habilidades[nombre])
                 {
-                    // Crear una nueva instancia de Habilidades con la habilidad y un valor aleatorio de 1 a 10
                     habilidadesPersonaje.Add(new Habilidades(habilidad, random.Next(1, 11)));
                 }
             }
-            // Crear una instancia de Datos con el tipo, nombre, apodo, fecha de nacimiento, edad y la lista de habilidades generadas
-            Datos datos = new Datos(tipo, nombre, apodo, fechaDeNacimiento, edad, habilidadesPersonaje);
+            else
+            {
+                habilidadesPersonaje.Add(new Habilidades("Habilidad1", random.Next(1, 11)));
+                habilidadesPersonaje.Add(new Habilidades("Habilidad2", random.Next(1, 11)));
+            }
+            //==============================================================================================================================//
 
             // Generar características aleatorias
             int velocidad = random.Next(1, 11);
@@ -57,10 +193,24 @@ namespace EspacioPersonaje
             int nivel = random.Next(1, 11);
             int armadura = random.Next(1, 11);
 
-            Caracteristicas caracteristicas = new Caracteristicas(velocidad, destreza, fuerza, nivel, armadura);
+            Caracteristicas caracteristicas = new Caracteristicas(
+                velocidad,
+                destreza,
+                fuerza,
+                nivel,
+                armadura
+            );
 
-            // Crear y devolver el personaje
-            return new Personaje(datos, caracteristicas);
+            Datos datos = new Datos(
+                tipo,
+                nombre,
+                apodo,
+                fechaDeNacimiento,
+                edad,
+                habilidadesPersonaje
+            );
+
+            return Task.FromResult(new Personaje(datos, caracteristicas));
         }
 
         private static string ElegirNombreAleatorio()
@@ -83,13 +233,58 @@ namespace EspacioPersonaje
             DateTime fechaActual = DateTime.Now;
             int edad = fechaActual.Year - fechaDeNacimiento.Year;
 
-            if (fechaActual.Month < fechaDeNacimiento.Month || (fechaActual.Month == fechaDeNacimiento.Month && fechaActual.Day < fechaDeNacimiento.Day))
+            if (
+                fechaActual.Month < fechaDeNacimiento.Month
+                || (
+                    fechaActual.Month == fechaDeNacimiento.Month
+                    && fechaActual.Day < fechaDeNacimiento.Day
+                )
+            )
             {
                 edad--;
             }
 
             return edad;
         }
+
+        public async Task<List<Personaje>> ConectarApi()
+        {
+            FuncionesUtiles.CentrarTexto("¿Deseas usar la API para crear personajes? (S/N): ");
+            Console.WriteLine();
+
+            bool usarApi = Console.ReadLine().Trim().ToUpper() == "S";
+            List<Personaje> personajes = new List<Personaje>();
+
+            if (usarApi)
+            {
+                try
+                {
+                    // Intentar crear 4 personajes usando la API
+                    for (int i = 0; i < 4; i++)
+                    {
+                        personajes.Add(await CrearPersonaje(usarApi));
+                    }
+                }
+                catch (HttpRequestException)
+                {
+                    // Si falla, notificar al usuario y usar datos precargados
+                    FuncionesUtiles.CentrarTexto("No se pudo conectar a la API. Generando personajes con datos precargados...");
+                    usarApi = false;
+                }
+            }
+
+            if (!usarApi)
+            {
+                // Crear 4 personajes usando datos precargados
+                for (int i = 0; i < 4; i++)
+                {
+                    personajes.Add(await CrearPersonaje(false));
+                }
+            }
+
+            return personajes;
+        }
+
     }
     //==============================================================================================================================//
 }

@@ -16,7 +16,6 @@ En caso de ganar todas las batallas obtienes el titulo de !!!Campeon de La Griet
 2. **Selección de Personajes:**
    - Al empezar el juego se puede seleccionar los 4 personajes creador de forma "aletoria" junto con sus habilidades
 
-
 3. **Combate:**
    - El jugador se enfrenta a rivales en combates 1 vs 1.
    - Durante el combate, las estadísticas del campeon del jugador (velocidad,destreza,fuerza,nivel y armadura) afectadas en caso de vencer a cada rival.
@@ -30,3 +29,6 @@ En caso de ganar todas las batallas obtienes el titulo de !!!Campeon de La Griet
 
 5. **Finalización del Juego:**
    - El juego termina si el jugador pierde un combate o decide salir. En cualquier caso, el jugador regresa al menú principal.
+### Librerías Externas
+- **LOLAPI:** Es una Api publica que use para obtener el nombre y el tag.
+  - https://ddragon.leagueoflegends.com/cdn/14.13.1/data/en_US/champion.json

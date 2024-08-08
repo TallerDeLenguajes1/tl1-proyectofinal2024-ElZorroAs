@@ -1,135 +1,99 @@
 [
   {
     "Datos": {
-      "Tipo": "Mago",
-      "Nombre": "Pantheon",
-      "Apodo": "El Hechicero",
-      "FechaDeNacimiento": "1999-11-27T00:00:00",
-      "Edad": 24,
+      "Tipo": "Marksman",
+      "Nombre": "Ashe",
+      "Apodo": "La Arquera de Hielo",
+      "FechaDeNacimiento": "1968-10-09T00:00:00",
+      "Edad": 55,
       "Habilidades": [
         {
-          "Nombre": "Cometa",
-          "Ataque": 9
+          "Nombre": "Foco de Cazadora",
+          "Ataque": 7
         },
         {
-          "Nombre": "Escudo del Alba",
-          "Ataque": 4
+          "Nombre": "Descarga de Flechas",
+          "Ataque": 7
         },
         {
-          "Nombre": "Lanza Suprema",
-          "Ataque": 9
+          "Nombre": "Visi\u00F3n de \u00C1guila",
+          "Ataque": 1
         },
         {
-          "Nombre": "Asalto Aegis",
-          "Ataque": 2
+          "Nombre": "Flecha de Cristal",
+          "Ataque": 8
         }
       ]
     },
     "Velocidad": 4,
     "Caracteristicas": {
       "Velocidad": 4,
-      "Destreza": 4,
-      "Fuerza": 6,
-      "Nivel": 5,
-      "Armadura": 4,
-      "Salud": 100
-    }
-  },
-  {
-    "Datos": {
-      "Tipo": "Mago",
-      "Nombre": "Swain",
-      "Apodo": "El Hechicero",
-      "FechaDeNacimiento": "2005-09-21T00:00:00",
-      "Edad": 18,
-      "Habilidades": [
-        {
-          "Nombre": "Mano de la Muerte",
-          "Ataque": 10
-        },
-        {
-          "Nombre": "Visi\u00F3n Imperial",
-          "Ataque": 8
-        },
-        {
-          "Nombre": "Mutilador",
-          "Ataque": 1
-        },
-        {
-          "Nombre": "Nunca M\u00E1s",
-          "Ataque": 9
-        }
-      ]
-    },
-    "Velocidad": 7,
-    "Caracteristicas": {
-      "Velocidad": 7,
       "Destreza": 2,
-      "Fuerza": 6,
-      "Nivel": 7,
-      "Armadura": 6,
-      "Salud": 100
-    }
-  },
-  {
-    "Datos": {
-      "Tipo": "Mago",
-      "Nombre": "Leblanc",
-      "Apodo": "La Ilusionista",
-      "FechaDeNacimiento": "1869-03-30T00:00:00",
-      "Edad": 155,
-      "Habilidades": [
-        {
-          "Nombre": "Sigilo de la Malevolencia",
-          "Ataque": 9
-        },
-        {
-          "Nombre": "Distorsi\u00F3n",
-          "Ataque": 5
-        },
-        {
-          "Nombre": "Cadenas Et\u00E9reas",
-          "Ataque": 7
-        },
-        {
-          "Nombre": "Mim\u00E9tica",
-          "Ataque": 9
-        }
-      ]
-    },
-    "Velocidad": 7,
-    "Caracteristicas": {
-      "Velocidad": 7,
-      "Destreza": 2,
-      "Fuerza": 8,
+      "Fuerza": 7,
       "Nivel": 1,
-      "Armadura": 9,
+      "Armadura": 10,
       "Salud": 100
     }
   },
   {
     "Datos": {
-      "Tipo": "Mago",
-      "Nombre": "Swain",
-      "Apodo": "El Destructor",
-      "FechaDeNacimiento": "1759-10-13T00:00:00",
-      "Edad": 264,
+      "Tipo": "Assassin",
+      "Nombre": "Katarina",
+      "Apodo": "La Sinfon\u00EDa Roja",
+      "FechaDeNacimiento": "1997-03-10T00:00:00",
+      "Edad": 27,
       "Habilidades": [
         {
-          "Nombre": "Mano de la Muerte",
-          "Ataque": 9
-        },
-        {
-          "Nombre": "Visi\u00F3n Imperial",
-          "Ataque": 6
-        },
-        {
-          "Nombre": "Mutilador",
+          "Nombre": "Voracidad",
           "Ataque": 1
         },
         {
-          "Nombre": "Nunca M\u00E1s",
+          "Nombre": "Flujo de Sangre",
+          "Ataque": 4
+        },
+        {
+          "Nombre": "Grito de Guerra",
+          "Ataque": 1
+        },
+        {
+          "Nombre": "Loto de Muerte",
+          "Ataque": 7
+        }
+      ]
+    },
+    "Velocidad": 1,
+    "Caracteristicas": {
+      "Velocidad": 1,
+      "Destreza": 2,
+      "Fuerza": 2,
+      "Nivel": 2,
+      "Armadura": 10,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Assassin",
+      "Nombre": "Katarina",
+      "Apodo": "La Sinfon\u00EDa Roja",
+      "FechaDeNacimiento": "1908-05-08T00:00:00",
+      "Edad": 116,
+      "Habilidades": [
+        {
+          "Nombre": "Voracidad",
+          "Ataque": 2
+        },
+        {
+          "Nombre": "Flujo de Sangre",
           "Ataque": 8
+        },
+        {
+          "Nombre": "Grito de Guerra",
+          "Ataque": 4
+        },
+        {
+          "Nombre": "Loto de Muerte",
+          "Ataque": 7
         }
       ]
     },
@@ -137,117 +101,45 @@
     "Caracteristicas": {
       "Velocidad": 10,
       "Destreza": 1,
-      "Fuerza": 10,
-      "Nivel": 5,
-      "Armadura": 7,
+      "Fuerza": 7,
+      "Nivel": 9,
+      "Armadura": 1,
       "Salud": 100
     }
   },
   {
     "Datos": {
-      "Tipo": "Mago",
-      "Nombre": "Aatrox",
-      "Apodo": "El Destructor",
-      "FechaDeNacimiento": "1960-10-28T00:00:00",
-      "Edad": 63,
+      "Tipo": "Assassin",
+      "Nombre": "Katarina",
+      "Apodo": "La Sinfon\u00EDa Roja",
+      "FechaDeNacimiento": "1736-12-16T00:00:00",
+      "Edad": 287,
       "Habilidades": [
         {
-          "Nombre": "La Espada Darkin",
-          "Ataque": 10
+          "Nombre": "Voracidad",
+          "Ataque": 1
         },
         {
-          "Nombre": "Cadenas Infernales",
+          "Nombre": "Flujo de Sangre",
+          "Ataque": 7
+        },
+        {
+          "Nombre": "Grito de Guerra",
           "Ataque": 2
         },
         {
-          "Nombre": "Desata su Poder",
-          "Ataque": 9
-        },
-        {
-          "Nombre": "Luz Umbr\u00EDa",
-          "Ataque": 4
+          "Nombre": "Loto de Muerte",
+          "Ataque": 2
         }
       ]
     },
-    "Velocidad": 2,
+    "Velocidad": 6,
     "Caracteristicas": {
-      "Velocidad": 2,
-      "Destreza": 3,
-      "Fuerza": 5,
+      "Velocidad": 6,
+      "Destreza": 5,
+      "Fuerza": 6,
       "Nivel": 2,
-      "Armadura": 5,
-      "Salud": 100
-    }
-  },
-  {
-    "Datos": {
-      "Tipo": "Guerrero",
-      "Nombre": "Aatrox",
-      "Apodo": "El Hechicero",
-      "FechaDeNacimiento": "1784-09-06T00:00:00",
-      "Edad": 239,
-      "Habilidades": [
-        {
-          "Nombre": "La Espada Darkin",
-          "Ataque": 6
-        },
-        {
-          "Nombre": "Cadenas Infernales",
-          "Ataque": 10
-        },
-        {
-          "Nombre": "Desata su Poder",
-          "Ataque": 4
-        },
-        {
-          "Nombre": "Luz Umbr\u00EDa",
-          "Ataque": 4
-        }
-      ]
-    },
-    "Velocidad": 1,
-    "Caracteristicas": {
-      "Velocidad": 1,
-      "Destreza": 3,
-      "Fuerza": 3,
-      "Nivel": 7,
-      "Armadura": 2,
-      "Salud": 100
-    }
-  },
-  {
-    "Datos": {
-      "Tipo": "Guerrero",
-      "Nombre": "Leblanc",
-      "Apodo": "El Destructor",
-      "FechaDeNacimiento": "1872-12-09T00:00:00",
-      "Edad": 151,
-      "Habilidades": [
-        {
-          "Nombre": "Sigilo de la Malevolencia",
-          "Ataque": 6
-        },
-        {
-          "Nombre": "Distorsi\u00F3n",
-          "Ataque": 8
-        },
-        {
-          "Nombre": "Cadenas Et\u00E9reas",
-          "Ataque": 5
-        },
-        {
-          "Nombre": "Mim\u00E9tica",
-          "Ataque": 8
-        }
-      ]
-    },
-    "Velocidad": 4,
-    "Caracteristicas": {
-      "Velocidad": 4,
-      "Destreza": 2,
-      "Fuerza": 2,
-      "Nivel": 10,
-      "Armadura": 1,
+      "Armadura": 3,
       "Salud": 100
     }
   }

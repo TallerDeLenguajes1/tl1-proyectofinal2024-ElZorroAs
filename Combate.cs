@@ -17,7 +17,6 @@ namespace EspacioPersonaje
         private Personaje personajeUsuario; // Personaje controlado por el usuario
         private Personaje personajeRival; // Personaje rival aleatorio
         private HistorialJson historialJson; // Instancia para manejar el historial en formato JSON
-        private Eleccion eleccion; // Instancia para manejar la elección de nuevos rivales
 
         // Constructor que inicializa los personajes y las instancias de Mensajes e HistorialJson
         public Combate(Personaje personajeUsuario, Personaje personajeRival)
@@ -25,7 +24,6 @@ namespace EspacioPersonaje
             this.personajeUsuario = personajeUsuario;
             this.personajeRival = personajeRival;
             this.historialJson = new HistorialJson();
-            this.eleccion = new Eleccion();
         }
 
         // Método principal de la batalla
@@ -127,7 +125,6 @@ namespace EspacioPersonaje
             if (!(personajeUsuario.Caracteristicas.Salud <= 0))
             {
                 bool continuar = true;
-                Eleccion eleccion = new Eleccion();
                 while (continuar)
                 {
                     Console.ForegroundColor = ConsoleColor.Yellow;
@@ -141,7 +138,7 @@ namespace EspacioPersonaje
                     switch (opcion)
                     {
                         case "1":
-                            personajeRival = eleccion.ElegirNuevoRival(personajes); // Elegir el siguiente rival
+                            personajeRival = Eleccion.ElegirRival(personajes); // Elegir el siguiente rival
                             Batalla(personajes);
                             continuar = false;
                             return;
@@ -159,7 +156,6 @@ namespace EspacioPersonaje
                 }
             }
         }
-
 
         // Método para manejar el turno del usuario
         private void TurnoUsuario()

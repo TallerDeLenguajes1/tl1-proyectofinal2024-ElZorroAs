@@ -15,7 +15,7 @@ namespace EspacioPersonaje
     //==============================================================================================================================//
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             /*
             1) Verificar al comienzo del Juego si existe el archivo de personajes:
@@ -24,9 +24,13 @@ namespace EspacioPersonaje
                 guárdelos en el archivo de personajes usando la clase PersonajesJson.
             2) Muestre por pantalla los datos y características de los personajes cargados. 
             */
+            Personaje usuario=null;
+            Personaje rival=null;
+
 
             string nombreArchivo = "personajes.json";
             List<Personaje> personajes;
+            FabricaDePersonajes fabrica = new FabricaDePersonajes();
 
             if (PersonajeJson.Existe(nombreArchivo))
             {
@@ -35,15 +39,12 @@ namespace EspacioPersonaje
             }
             else
             {
-                personajes = new List<Personaje>();
-                FabricaDePersonajes fabrica = new FabricaDePersonajes();
-                for (int i = 0; i < 4; i++)
-                {
-                    personajes.Add(FabricaDePersonajes.CrearPersonajeAleatorio());
-                }
-
+                // Si el archivo no existe, solicita nuevos personajes de la API y guarda en el archivo
+                personajes = await fabrica.ConectarApi();
                 PersonajeJson.GuardarPersonajes(personajes, nombreArchivo);
-                Console.WriteLine("Se generaron 10 nuevos personajes y se guardaron en el archivo.");
+                Console.WriteLine(
+                    "Se generaron nuevos personajes y se guardaron en el archivo."
+                );
             }
 
             /*
@@ -57,7 +58,7 @@ namespace EspacioPersonaje
 
             int opcion;
             do
-            {    
+            {
                 Console.WriteLine("\n\n\n\n\n");
                 // Mostrar ASCII art de bienvenida
                 FuncionesUtiles.MostrarAsciiArtBienvenida(1);
@@ -92,16 +93,12 @@ namespace EspacioPersonaje
 
                             if (personajes.Count < 4)
                             {
-                                for (int i = 0; i < 4; i++)
-                                {
-                                    personajes.Add(FabricaDePersonajes.CrearPersonajeAleatorio());
-                                }
+                                personajes = await fabrica.ConectarApi();
                                 PersonajeJson.GuardarPersonajes(personajes, nombreArchivo);
                             }
 
-                            Eleccion eleccion = new Eleccion(); // crea el objeto tipo Eleccion
-
-                            var (usuario, rival) = eleccion.ElegirPersonajes(personajes);    // Elegir un personaje al usuario
+                            usuario = Eleccion.ElegirPersonajeUsuario(personajes);
+                            rival = Eleccion.ElegirRival(personajes);
 
                             // Muestra los personajes seleccionados y realiza la batalla
 

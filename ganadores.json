@@ -2,112 +2,34 @@
   {
     "personajeGanador": {
       "Datos": {
-        "Tipo": "Guerrero",
-        "Nombre": "Leblanc",
-        "Apodo": "El Conquistador",
-        "FechaDeNacimiento": "1821-03-22T00:00:00",
-        "Edad": 203,
+        "Tipo": "Marksman",
+        "Nombre": "Ashe",
+        "Apodo": "La Arquera de Hielo",
+        "FechaDeNacimiento": "1905-12-28T00:00:00",
+        "Edad": 118,
         "Habilidades": [
           {
-            "Nombre": "Sigilo de la Malevolencia",
+            "Nombre": "Foco de Cazadora",
+            "Ataque": 4
+          },
+          {
+            "Nombre": "Descarga de Flechas",
             "Ataque": 8
           },
           {
-            "Nombre": "Distorsi\u00F3n",
-            "Ataque": 7
+            "Nombre": "Visi\u00F3n de \u00C1guila",
+            "Ataque": 9
           },
           {
-            "Nombre": "Cadenas Et\u00E9reas",
-            "Ataque": 5
-          },
-          {
-            "Nombre": "Mim\u00E9tica",
-            "Ataque": 8
+            "Nombre": "Flecha de Cristal",
+            "Ataque": 4
           }
         ]
       },
-      "Velocidad": 8,
+      "Velocidad": 5,
       "Caracteristicas": {
-        "Velocidad": 8,
-        "Destreza": 4,
-        "Fuerza": 9,
-        "Nivel": 10,
-        "Armadura": 8,
-        "Salud": 100
-      }
-    },
-    "fechaVictoria": "2024-08-07"
-  },
-  {
-    "personajeGanador": {
-      "Datos": {
-        "Tipo": "Guerrero",
-        "Nombre": "Leblanc",
-        "Apodo": "El Conquistador",
-        "FechaDeNacimiento": "1821-03-22T00:00:00",
-        "Edad": 203,
-        "Habilidades": [
-          {
-            "Nombre": "Sigilo de la Malevolencia",
-            "Ataque": 8
-          },
-          {
-            "Nombre": "Distorsi\u00F3n",
-            "Ataque": 7
-          },
-          {
-            "Nombre": "Cadenas Et\u00E9reas",
-            "Ataque": 5
-          },
-          {
-            "Nombre": "Mim\u00E9tica",
-            "Ataque": 8
-          }
-        ]
-      },
-      "Velocidad": 8,
-      "Caracteristicas": {
-        "Velocidad": 8,
+        "Velocidad": 5,
         "Destreza": 5,
-        "Fuerza": 9,
-        "Nivel": 10,
-        "Armadura": 6,
-        "Salud": 100
-      }
-    },
-    "fechaVictoria": "2024-08-07"
-  },
-  {
-    "personajeGanador": {
-      "Datos": {
-        "Tipo": "Guerrero",
-        "Nombre": "Leblanc",
-        "Apodo": "El Conquistador",
-        "FechaDeNacimiento": "1821-03-22T00:00:00",
-        "Edad": 203,
-        "Habilidades": [
-          {
-            "Nombre": "Sigilo de la Malevolencia",
-            "Ataque": 8
-          },
-          {
-            "Nombre": "Distorsi\u00F3n",
-            "Ataque": 7
-          },
-          {
-            "Nombre": "Cadenas Et\u00E9reas",
-            "Ataque": 5
-          },
-          {
-            "Nombre": "Mim\u00E9tica",
-            "Ataque": 8
-          }
-        ]
-      },
-      "Velocidad": 8,
-      "Caracteristicas": {
-        "Velocidad": 8,
-        "Destreza": 4,
         "Fuerza": 10,
         "Nivel": 10,
         "Armadura": 7,
@@ -119,182 +41,26 @@
   {
     "personajeGanador": {
       "Datos": {
-        "Tipo": "Guerrero",
-        "Nombre": "Pantheon",
-        "Apodo": "La Ilusionista",
-        "FechaDeNacimiento": "1747-05-18T00:00:00",
-        "Edad": 277,
+        "Tipo": "Mage",
+        "Nombre": "Orianna",
+        "Apodo": "La Doncella Mec\u00E1nica",
+        "FechaDeNacimiento": "1929-11-14T00:00:00",
+        "Edad": 94,
         "Habilidades": [
           {
-            "Nombre": "Cometa",
-            "Ataque": 6
+            "Nombre": "Ataque de Comando",
+            "Ataque": 7
           },
           {
-            "Nombre": "Escudo del Alba",
-            "Ataque": 1
-          },
-          {
-            "Nombre": "Lanza Suprema",
+            "Nombre": "Protecci\u00F3n de Comando",
             "Ataque": 9
           },
           {
-            "Nombre": "Asalto Aegis",
-            "Ataque": 10
-          }
-        ]
-      },
-      "Velocidad": 10,
-      "Caracteristicas": {
-        "Velocidad": 10,
-        "Destreza": 1,
-        "Fuerza": 8,
-        "Nivel": 7,
-        "Armadura": 9,
-        "Salud": 100
-      }
-    },
-    "fechaVictoria": "2024-08-07"
-  },
-  {
-    "personajeGanador": {
-      "Datos": {
-        "Tipo": "Guerrero",
-        "Nombre": "Pantheon",
-        "Apodo": "La Ilusionista",
-        "FechaDeNacimiento": "1747-05-18T00:00:00",
-        "Edad": 277,
-        "Habilidades": [
-          {
-            "Nombre": "Cometa",
-            "Ataque": 6
-          },
-          {
-            "Nombre": "Escudo del Alba",
-            "Ataque": 1
-          },
-          {
-            "Nombre": "Lanza Suprema",
-            "Ataque": 9
-          },
-          {
-            "Nombre": "Asalto Aegis",
-            "Ataque": 10
-          }
-        ]
-      },
-      "Velocidad": 10,
-      "Caracteristicas": {
-        "Velocidad": 10,
-        "Destreza": 1,
-        "Fuerza": 8,
-        "Nivel": 6,
-        "Armadura": 10,
-        "Salud": 100
-      }
-    },
-    "fechaVictoria": "2024-08-07"
-  },
-  {
-    "personajeGanador": {
-      "Datos": {
-        "Tipo": "Guerrero",
-        "Nombre": "Pantheon",
-        "Apodo": "La Ilusionista",
-        "FechaDeNacimiento": "1747-05-18T00:00:00",
-        "Edad": 277,
-        "Habilidades": [
-          {
-            "Nombre": "Cometa",
-            "Ataque": 6
-          },
-          {
-            "Nombre": "Escudo del Alba",
-            "Ataque": 1
-          },
-          {
-            "Nombre": "Lanza Suprema",
-            "Ataque": 9
-          },
-          {
-            "Nombre": "Asalto Aegis",
-            "Ataque": 10
-          }
-        ]
-      },
-      "Velocidad": 10,
-      "Caracteristicas": {
-        "Velocidad": 10,
-        "Destreza": 2,
-        "Fuerza": 8,
-        "Nivel": 6,
-        "Armadura": 10,
-        "Salud": 100
-      }
-    },
-    "fechaVictoria": "2024-08-07"
-  },
-  {
-    "personajeGanador": {
-      "Datos": {
-        "Tipo": "Guerrero",
-        "Nombre": "Pantheon",
-        "Apodo": "La Ilusionista",
-        "FechaDeNacimiento": "1747-05-18T00:00:00",
-        "Edad": 277,
-        "Habilidades": [
-          {
-            "Nombre": "Cometa",
-            "Ataque": 6
-          },
-          {
-            "Nombre": "Escudo del Alba",
-            "Ataque": 1
-          },
-          {
-            "Nombre": "Lanza Suprema",
-            "Ataque": 9
-          },
-          {
-            "Nombre": "Asalto Aegis",
-            "Ataque": 10
-          }
-        ]
-      },
-      "Velocidad": 10,
-      "Caracteristicas": {
-        "Velocidad": 10,
-        "Destreza": 1,
-        "Fuerza": 9,
-        "Nivel": 6,
-        "Armadura": 10,
-        "Salud": 100
-      }
-    },
-    "fechaVictoria": "2024-08-07"
-  },
-  {
-    "personajeGanador": {
-      "Datos": {
-        "Tipo": "Mago",
-        "Nombre": "Pantheon",
-        "Apodo": "La Ilusionista",
-        "FechaDeNacimiento": "1874-01-06T00:00:00",
-        "Edad": 150,
-        "Habilidades": [
-          {
-            "Nombre": "Cometa",
-            "Ataque": 3
-          },
-          {
-            "Nombre": "Escudo del Alba",
-            "Ataque": 4
-          },
-          {
-            "Nombre": "Lanza Suprema",
+            "Nombre": "Onda de Choque",
             "Ataque": 10
           },
           {
-            "Nombre": "Asalto Aegis",
+            "Nombre": "Comando: Shockwave",
             "Ataque": 4
           }
         ]
@@ -302,8 +68,8 @@
       "Velocidad": 6,
       "Caracteristicas": {
         "Velocidad": 6,
-        "Destreza": 5,
-        "Fuerza": 2,
+        "Destreza": 3,
+        "Fuerza": 7,
         "Nivel": 10,
         "Armadura": 5,
         "Salud": 100
@@ -314,26 +80,26 @@
   {
     "personajeGanador": {
       "Datos": {
-        "Tipo": "Mago",
-        "Nombre": "Pantheon",
-        "Apodo": "La Ilusionista",
-        "FechaDeNacimiento": "1874-01-06T00:00:00",
-        "Edad": 150,
+        "Tipo": "Mage",
+        "Nombre": "Orianna",
+        "Apodo": "La Doncella Mec\u00E1nica",
+        "FechaDeNacimiento": "1929-11-14T00:00:00",
+        "Edad": 94,
         "Habilidades": [
           {
-            "Nombre": "Cometa",
-            "Ataque": 3
+            "Nombre": "Ataque de Comando",
+            "Ataque": 7
           },
           {
-            "Nombre": "Escudo del Alba",
-            "Ataque": 4
+            "Nombre": "Protecci\u00F3n de Comando",
+            "Ataque": 9
           },
           {
-            "Nombre": "Lanza Suprema",
+            "Nombre": "Onda de Choque",
             "Ataque": 10
           },
           {
-            "Nombre": "Asalto Aegis",
+            "Nombre": "Comando: Shockwave",
             "Ataque": 4
           }
         ]
@@ -342,129 +108,129 @@
       "Caracteristicas": {
         "Velocidad": 6,
         "Destreza": 5,
-        "Fuerza": 3,
+        "Fuerza": 6,
         "Nivel": 10,
         "Armadura": 5,
         "Salud": 100
       }
     },
-    "fechaVictoria": "2024-08-07"
+    "fechaVictoria": "2024-08-08"
   },
   {
     "personajeGanador": {
       "Datos": {
-        "Tipo": "Mago",
-        "Nombre": "Pantheon",
-        "Apodo": "La Ilusionista",
-        "FechaDeNacimiento": "1874-01-06T00:00:00",
-        "Edad": 150,
+        "Tipo": "Assassin",
+        "Nombre": "Katarina",
+        "Apodo": "La Sinfon\u00EDa Roja",
+        "FechaDeNacimiento": "1736-12-16T00:00:00",
+        "Edad": 287,
         "Habilidades": [
           {
-            "Nombre": "Cometa",
-            "Ataque": 3
+            "Nombre": "Voracidad",
+            "Ataque": 1
           },
           {
-            "Nombre": "Escudo del Alba",
-            "Ataque": 4
+            "Nombre": "Flujo de Sangre",
+            "Ataque": 7
           },
           {
-            "Nombre": "Lanza Suprema",
-            "Ataque": 10
+            "Nombre": "Grito de Guerra",
+            "Ataque": 2
           },
           {
-            "Nombre": "Asalto Aegis",
-            "Ataque": 4
+            "Nombre": "Loto de Muerte",
+            "Ataque": 2
           }
         ]
       },
-      "Velocidad": 7,
+      "Velocidad": 8,
       "Caracteristicas": {
-        "Velocidad": 7,
+        "Velocidad": 8,
         "Destreza": 5,
-        "Fuerza": 3,
-        "Nivel": 10,
+        "Fuerza": 6,
+        "Nivel": 2,
+        "Armadura": 3,
+        "Salud": 100
+      }
+    },
+    "fechaVictoria": "2024-08-08"
+  },
+  {
+    "personajeGanador": {
+      "Datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Katarina",
+        "Apodo": "La Sinfon\u00EDa Roja",
+        "FechaDeNacimiento": "1736-12-16T00:00:00",
+        "Edad": 287,
+        "Habilidades": [
+          {
+            "Nombre": "Voracidad",
+            "Ataque": 1
+          },
+          {
+            "Nombre": "Flujo de Sangre",
+            "Ataque": 7
+          },
+          {
+            "Nombre": "Grito de Guerra",
+            "Ataque": 2
+          },
+          {
+            "Nombre": "Loto de Muerte",
+            "Ataque": 2
+          }
+        ]
+      },
+      "Velocidad": 6,
+      "Caracteristicas": {
+        "Velocidad": 6,
+        "Destreza": 5,
+        "Fuerza": 8,
+        "Nivel": 2,
         "Armadura": 4,
         "Salud": 100
       }
     },
-    "fechaVictoria": "2024-08-07"
+    "fechaVictoria": "2024-08-08"
   },
   {
     "personajeGanador": {
       "Datos": {
-        "Tipo": "Mago",
-        "Nombre": "Aatrox",
-        "Apodo": "El Conquistador",
-        "FechaDeNacimiento": "1844-11-25T00:00:00",
-        "Edad": 179,
+        "Tipo": "Assassin",
+        "Nombre": "Katarina",
+        "Apodo": "La Sinfon\u00EDa Roja",
+        "FechaDeNacimiento": "1736-12-16T00:00:00",
+        "Edad": 287,
         "Habilidades": [
           {
-            "Nombre": "La Espada Darkin",
-            "Ataque": 4
-          },
-          {
-            "Nombre": "Cadenas Infernales",
-            "Ataque": 8
-          },
-          {
-            "Nombre": "Desata su Poder",
-            "Ataque": 4
-          },
-          {
-            "Nombre": "Luz Umbr\u00EDa",
-            "Ataque": 8
-          }
-        ]
-      },
-      "Velocidad": 10,
-      "Caracteristicas": {
-        "Velocidad": 10,
-        "Destreza": 5,
-        "Fuerza": 8,
-        "Nivel": 7,
-        "Armadura": 7,
-        "Salud": 100
-      }
-    },
-    "fechaVictoria": "2024-08-07"
-  },
-  {
-    "personajeGanador": {
-      "Datos": {
-        "Tipo": "Mago",
-        "Nombre": "Swain",
-        "Apodo": "El Destructor",
-        "FechaDeNacimiento": "1759-10-13T00:00:00",
-        "Edad": 264,
-        "Habilidades": [
-          {
-            "Nombre": "Mano de la Muerte",
-            "Ataque": 9
-          },
-          {
-            "Nombre": "Visi\u00F3n Imperial",
-            "Ataque": 6
-          },
-          {
-            "Nombre": "Mutilador",
+            "Nombre": "Voracidad",
             "Ataque": 1
           },
           {
-            "Nombre": "Nunca M\u00E1s",
-            "Ataque": 8
+            "Nombre": "Flujo de Sangre",
+            "Ataque": 7
+          },
+          {
+            "Nombre": "Grito de Guerra",
+            "Ataque": 2
+          },
+          {
+            "Nombre": "Loto de Muerte",
+            "Ataque": 2
           }
         ]
       },
-      "Velocidad": 10,
+      "Velocidad": 6,
       "Caracteristicas": {
-        "Velocidad": 10,
-        "Destreza": 1,
-        "Fuerza": 10,
-        "Nivel": 5,
-        "Armadura": 8,
-        "Salud": 79
+        "Velocidad": 6,
+        "Destreza": 5,
+        "Fuerza": 9,
+        "Nivel": 2,
+        "Armadura": 3,
+        "Salud": 23
       }
     },
-    "fechaVictoria": "2024-08-07"
+    "fechaVictoria": "2024-08-08"
   }
 ]
