@@ -21,25 +21,24 @@ namespace EspacioPersonaje
         // Constructor que inicializa los personajes y las instancias de Mensajes e HistorialJson
         public Combate(Personaje personajeUsuario, Personaje personajeRival)
         {
-            this.personajeUsuario = personajeUsuario;
+            this.personajeUsuario = personajeUsuario; // Almacena el personaje del usuario
             this.personajeRival = personajeRival;
-            this.historialJson = new HistorialJson();
+            this.historialJson = new HistorialJson(); // Se crea y se almacena una nueva para manejar el historial del combate en formato JSON
         }
 
         // Método principal de la batalla
         public void Batalla(List<Personaje> personajes)
         {
-            while (
-                personajeUsuario.Caracteristicas.Salud > 0
-                && personajeRival.Caracteristicas.Salud > 0
-            )
+            //evalúa si ambos personajes siguen vivos
+            while (personajeUsuario.Caracteristicas.Salud > 0 && personajeRival.Caracteristicas.Salud > 0)
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
                 // Turno del usuario
                 FuncionesUtiles.CentrarTexto("[=======================================================]");
                 FuncionesUtiles.CentrarTexto("Turno del usuario:");
-                TurnoUsuario();
+                TurnoUsuario(); // invoco al metodo del usuario
 
+                //verifica si el rival fue vencido
                 if (personajeRival.Caracteristicas.Salud <= 0)
                 {
                     // El usuario derrotó al rival
@@ -54,7 +53,7 @@ namespace EspacioPersonaje
                             $"Te quedan {personajes.Count} rivales para la victoria."
                         );
                     }
-                    Beneficiar(personajeUsuario); // Beneficia al Pokémon del usuario
+                    Beneficiar(personajeUsuario); // Beneficia al personaje del usuario
                     Console.ResetColor();
                     break;
                 }
@@ -111,9 +110,10 @@ namespace EspacioPersonaje
                 historialJson.GuardarGanador(personajeUsuario, DateTime.Now, "ganadores.json");
                 Console.ResetColor();
             }
+            // verifica si tiene salud para seguir peleando
             else if (personajeUsuario.Caracteristicas.Salud > 0)
             {
-                MenuBatalla(personajes); // Muestra el menú de batalla para continuar o guardar
+                MenuBatalla(personajes); // Muestra el menú de batalla para continuar
             }
             Console.ResetColor();
         }
@@ -122,6 +122,7 @@ namespace EspacioPersonaje
         // Método para mostrar el menú de batalla y permitir al usuario continuar, guardar o salir
         private void MenuBatalla(List<Personaje> personajes)
         {
+            // verifica si el personaje aun esta vivo 
             if (!(personajeUsuario.Caracteristicas.Salud <= 0))
             {
                 bool continuar = true;
@@ -139,13 +140,13 @@ namespace EspacioPersonaje
                     {
                         case "1":
                             personajeRival = Eleccion.ElegirRival(personajes); // Elegir el siguiente rival
-                            Batalla(personajes);
+                            Batalla(personajes); // llamo al metodo batalla
                             continuar = false;
                             return;
 
                         case "2":
                             Console.WriteLine(
-                                "\nHas salido del juego sin guardar. Tu Personaje no continuo con la batalla.\n"
+                                "\nTu Personaje no continuo con la batalla.\n"
                             );
                             continuar = false;
                             return;
@@ -163,11 +164,13 @@ namespace EspacioPersonaje
             FuncionesUtiles.CentrarTexto("!!!Elige tu habilidad!!!");
             for (int i = 0; i < personajeUsuario.Datos.Habilidades.Count; i++)
             {
+                // Itera sobre cada habilidad en la lista de habilidades del personaje
                 var habilidades = personajeUsuario.Datos.Habilidades[i];
                 FuncionesUtiles.CentrarTexto($"{i + 1}. {habilidades.Nombre} (Ataque: {habilidades.Ataque})");
             }
 
             int seleccion = 0;
+
             while (seleccion < 1 || seleccion > personajeUsuario.Datos.Habilidades.Count)
             {
                 FuncionesUtiles.CentrarTexto("[========= Selecciona el número de la habilidad =========]");
@@ -196,8 +199,11 @@ namespace EspacioPersonaje
         // Método para manejar el turno del rival
         private void TurnoRival()
         {
+            // Crea una instancia de la clase Random para generar números aleatorios
             Random random = new Random();
-            int seleccion = random.Next(personajeRival.Datos.Habilidades.Count);
+            int seleccion = random.Next(personajeRival.Datos.Habilidades.Count);// Selecciona una habilidad aleatoria
+
+            // Obtiene la habilidad seleccionada del rival usando el índice aleatorio generado
             Habilidades habilidadSeleccionada = personajeRival.Datos.Habilidades[seleccion];
 
             FuncionesUtiles.CentrarTexto($"El rival usa la habilidad: {habilidadSeleccionada.Nombre}");

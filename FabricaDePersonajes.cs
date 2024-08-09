@@ -10,8 +10,8 @@ namespace EspacioPersonaje
     public class FabricaDePersonajes
     {
         //==============================================================================================================================//
-        private static Random random = new Random();
-
+        private static Random random = new Random();// Instancia de la clase Random para generar valores aleatorios
+        // Diccionario que mapea nombres de campeones a su tipo (ej. Mage, Marksman)
         private static Dictionary<string, string> tiposCampeones = new Dictionary<string, string>()
         {
             { "Orianna", "Mage" }, // Mage
@@ -25,7 +25,7 @@ namespace EspacioPersonaje
             { "Swain", "Mage" }, // Mage
             { "Leblanc", "Mage" } // Mage
         };
-
+        // Diccionario que mapea nombres de campeones a sus apodos
         private static Dictionary<string, string> apodosCampeones = new Dictionary<string, string>()
         {
             { "Orianna", "La Doncella Mecánica" },
@@ -39,7 +39,7 @@ namespace EspacioPersonaje
             { "Swain", "El Gran General" },
             { "Leblanc", "La Maquiavélica" }
         };
-
+        // Diccionario que mapea nombres de campeones a una lista de sus habilidades
         private static Dictionary<string, List<string>> habilidades = new Dictionary<
             string,
             List<string>
@@ -140,7 +140,7 @@ namespace EspacioPersonaje
                 }
             }
         };
-
+        // Método para crear un personaje con datos opcionales de la API
         public Task<Personaje> CrearPersonaje(bool usarApi)
         {
             string nombre = null;
@@ -148,7 +148,7 @@ namespace EspacioPersonaje
             string apodo = null;
             DateTime fechaDeNacimiento = GenerarFechaAleatoria();
             int edad = CalcularEdad(fechaDeNacimiento);
-
+            // Determina los detalles del personaje dependiendo de si se usa la API o no
             if (usarApi)
             {
                 nombre = tiposCampeones.Keys.ElementAt(random.Next(tiposCampeones.Count));
@@ -181,6 +181,7 @@ namespace EspacioPersonaje
             }
             else
             {
+                // Si el nombre no tiene habilidades en el diccionario, asigna habilidades genéricas
                 habilidadesPersonaje.Add(new Habilidades("Habilidad1", random.Next(1, 11)));
                 habilidadesPersonaje.Add(new Habilidades("Habilidad2", random.Next(1, 11)));
             }

@@ -1,145 +1,145 @@
 [
   {
     "Datos": {
-      "Tipo": "Marksman",
-      "Nombre": "Ashe",
-      "Apodo": "La Arquera de Hielo",
-      "FechaDeNacimiento": "1968-10-09T00:00:00",
-      "Edad": 55,
+      "Tipo": "Mage",
+      "Nombre": "Ryze",
+      "Apodo": "El Hechicero R\u00FAnico",
+      "FechaDeNacimiento": "1925-06-14T00:00:00",
+      "Edad": 99,
       "Habilidades": [
         {
-          "Nombre": "Foco de Cazadora",
+          "Nombre": "Carga de Mana",
           "Ataque": 7
         },
         {
-          "Nombre": "Descarga de Flechas",
-          "Ataque": 7
+          "Nombre": "Flujo de Energ\u00EDa",
+          "Ataque": 3
         },
         {
-          "Nombre": "Visi\u00F3n de \u00C1guila",
-          "Ataque": 1
-        },
-        {
-          "Nombre": "Flecha de Cristal",
-          "Ataque": 8
-        }
-      ]
-    },
-    "Velocidad": 4,
-    "Caracteristicas": {
-      "Velocidad": 4,
-      "Destreza": 2,
-      "Fuerza": 7,
-      "Nivel": 1,
-      "Armadura": 10,
-      "Salud": 100
-    }
-  },
-  {
-    "Datos": {
-      "Tipo": "Assassin",
-      "Nombre": "Katarina",
-      "Apodo": "La Sinfon\u00EDa Roja",
-      "FechaDeNacimiento": "1997-03-10T00:00:00",
-      "Edad": 27,
-      "Habilidades": [
-        {
-          "Nombre": "Voracidad",
-          "Ataque": 1
-        },
-        {
-          "Nombre": "Flujo de Sangre",
+          "Nombre": "Ruptura de Portal",
           "Ataque": 4
         },
         {
-          "Nombre": "Grito de Guerra",
-          "Ataque": 1
-        },
-        {
-          "Nombre": "Loto de Muerte",
-          "Ataque": 7
+          "Nombre": "Tormenta de Mana",
+          "Ataque": 10
         }
       ]
     },
-    "Velocidad": 1,
+    "Velocidad": 3,
     "Caracteristicas": {
-      "Velocidad": 1,
-      "Destreza": 2,
-      "Fuerza": 2,
-      "Nivel": 2,
-      "Armadura": 10,
-      "Salud": 100
-    }
-  },
-  {
-    "Datos": {
-      "Tipo": "Assassin",
-      "Nombre": "Katarina",
-      "Apodo": "La Sinfon\u00EDa Roja",
-      "FechaDeNacimiento": "1908-05-08T00:00:00",
-      "Edad": 116,
-      "Habilidades": [
-        {
-          "Nombre": "Voracidad",
-          "Ataque": 2
-        },
-        {
-          "Nombre": "Flujo de Sangre",
-          "Ataque": 8
-        },
-        {
-          "Nombre": "Grito de Guerra",
-          "Ataque": 4
-        },
-        {
-          "Nombre": "Loto de Muerte",
-          "Ataque": 7
-        }
-      ]
-    },
-    "Velocidad": 10,
-    "Caracteristicas": {
-      "Velocidad": 10,
+      "Velocidad": 3,
       "Destreza": 1,
-      "Fuerza": 7,
-      "Nivel": 9,
+      "Fuerza": 1,
+      "Nivel": 8,
+      "Armadura": 7,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Mage",
+      "Nombre": "Orianna",
+      "Apodo": "La Doncella Mec\u00E1nica",
+      "FechaDeNacimiento": "1920-05-26T00:00:00",
+      "Edad": 104,
+      "Habilidades": [
+        {
+          "Nombre": "Ataque de Comando",
+          "Ataque": 6
+        },
+        {
+          "Nombre": "Protecci\u00F3n de Comando",
+          "Ataque": 7
+        },
+        {
+          "Nombre": "Onda de Choque",
+          "Ataque": 4
+        },
+        {
+          "Nombre": "Comando: Shockwave",
+          "Ataque": 4
+        }
+      ]
+    },
+    "Velocidad": 7,
+    "Caracteristicas": {
+      "Velocidad": 7,
+      "Destreza": 3,
+      "Fuerza": 2,
+      "Nivel": 6,
       "Armadura": 1,
       "Salud": 100
     }
   },
   {
     "Datos": {
-      "Tipo": "Assassin",
-      "Nombre": "Katarina",
-      "Apodo": "La Sinfon\u00EDa Roja",
-      "FechaDeNacimiento": "1736-12-16T00:00:00",
-      "Edad": 287,
+      "Tipo": "Marksman",
+      "Nombre": "Ezreal",
+      "Apodo": "El Explorador Pr\u00F3digo",
+      "FechaDeNacimiento": "1852-10-06T00:00:00",
+      "Edad": 171,
       "Habilidades": [
         {
-          "Nombre": "Voracidad",
-          "Ataque": 1
-        },
-        {
-          "Nombre": "Flujo de Sangre",
+          "Nombre": "Tiro M\u00EDstico",
           "Ataque": 7
         },
         {
-          "Nombre": "Grito de Guerra",
-          "Ataque": 2
+          "Nombre": "Flujo de Energ\u00EDa",
+          "Ataque": 4
         },
         {
-          "Nombre": "Loto de Muerte",
-          "Ataque": 2
+          "Nombre": "Desplazamiento Arcano",
+          "Ataque": 7
+        },
+        {
+          "Nombre": "Barrage de Proyectiles",
+          "Ataque": 5
         }
       ]
     },
-    "Velocidad": 6,
+    "Velocidad": 2,
     "Caracteristicas": {
-      "Velocidad": 6,
+      "Velocidad": 2,
+      "Destreza": 4,
+      "Fuerza": 4,
+      "Nivel": 6,
+      "Armadura": 7,
+      "Salud": 100
+    }
+  },
+  {
+    "Datos": {
+      "Tipo": "Mage",
+      "Nombre": "Lux",
+      "Apodo": "La Dama Luminosa",
+      "FechaDeNacimiento": "1878-04-18T00:00:00",
+      "Edad": 146,
+      "Habilidades": [
+        {
+          "Nombre": "Luz Prisma",
+          "Ataque": 3
+        },
+        {
+          "Nombre": "Barrera de Luz",
+          "Ataque": 7
+        },
+        {
+          "Nombre": "Singulidad Luminosa",
+          "Ataque": 8
+        },
+        {
+          "Nombre": "Destello Final",
+          "Ataque": 8
+        }
+      ]
+    },
+    "Velocidad": 5,
+    "Caracteristicas": {
+      "Velocidad": 5,
       "Destreza": 5,
-      "Fuerza": 6,
-      "Nivel": 2,
-      "Armadura": 3,
+      "Fuerza": 5,
+      "Nivel": 4,
+      "Armadura": 6,
       "Salud": 100
     }
   }

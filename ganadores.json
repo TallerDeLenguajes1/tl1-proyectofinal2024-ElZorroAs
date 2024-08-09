@@ -228,9 +228,243 @@
         "Fuerza": 9,
         "Nivel": 2,
         "Armadura": 3,
-        "Salud": 23
+        "Salud": 100
       }
     },
     "fechaVictoria": "2024-08-08"
+  },
+  {
+    "personajeGanador": {
+      "Datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Katarina",
+        "Apodo": "La Sinfon\u00EDa Roja",
+        "FechaDeNacimiento": "1736-12-16T00:00:00",
+        "Edad": 287,
+        "Habilidades": [
+          {
+            "Nombre": "Voracidad",
+            "Ataque": 1
+          },
+          {
+            "Nombre": "Flujo de Sangre",
+            "Ataque": 7
+          },
+          {
+            "Nombre": "Grito de Guerra",
+            "Ataque": 2
+          },
+          {
+            "Nombre": "Loto de Muerte",
+            "Ataque": 2
+          }
+        ]
+      },
+      "Velocidad": 7,
+      "Caracteristicas": {
+        "Velocidad": 7,
+        "Destreza": 5,
+        "Fuerza": 7,
+        "Nivel": 2,
+        "Armadura": 4,
+        "Salud": 100
+      }
+    },
+    "fechaVictoria": "2024-08-08"
+  },
+  {
+    "personajeGanador": {
+      "Datos": {
+        "Tipo": "Assassin",
+        "Nombre": "Katarina",
+        "Apodo": "La Sinfon\u00EDa Roja",
+        "FechaDeNacimiento": "1736-12-16T00:00:00",
+        "Edad": 287,
+        "Habilidades": [
+          {
+            "Nombre": "Voracidad",
+            "Ataque": 1
+          },
+          {
+            "Nombre": "Flujo de Sangre",
+            "Ataque": 7
+          },
+          {
+            "Nombre": "Grito de Guerra",
+            "Ataque": 2
+          },
+          {
+            "Nombre": "Loto de Muerte",
+            "Ataque": 2
+          }
+        ]
+      },
+      "Velocidad": 7,
+      "Caracteristicas": {
+        "Velocidad": 7,
+        "Destreza": 5,
+        "Fuerza": 6,
+        "Nivel": 3,
+        "Armadura": 4,
+        "Salud": 100
+      }
+    },
+    "fechaVictoria": "2024-08-08"
+  },
+  {
+    "personajeGanador": {
+      "Datos": {
+        "Tipo": "Mage",
+        "Nombre": "Lux",
+        "Apodo": "La Dama Luminosa",
+        "FechaDeNacimiento": "1878-04-18T00:00:00",
+        "Edad": 146,
+        "Habilidades": [
+          {
+            "Nombre": "Luz Prisma",
+            "Ataque": 3
+          },
+          {
+            "Nombre": "Barrera de Luz",
+            "Ataque": 7
+          },
+          {
+            "Nombre": "Singulidad Luminosa",
+            "Ataque": 8
+          },
+          {
+            "Nombre": "Destello Final",
+            "Ataque": 8
+          }
+        ]
+      },
+      "Velocidad": 5,
+      "Caracteristicas": {
+        "Velocidad": 5,
+        "Destreza": 5,
+        "Fuerza": 7,
+        "Nivel": 5,
+        "Armadura": 6,
+        "Salud": 100
+      }
+    },
+    "fechaVictoria": "2024-08-08"
+  },
+  {
+    "personajeGanador": {
+      "Datos": {
+        "Tipo": "Mage",
+        "Nombre": "Lux",
+        "Apodo": "La Dama Luminosa",
+        "FechaDeNacimiento": "1878-04-18T00:00:00",
+        "Edad": 146,
+        "Habilidades": [
+          {
+            "Nombre": "Luz Prisma",
+            "Ataque": 3
+          },
+          {
+            "Nombre": "Barrera de Luz",
+            "Ataque": 7
+          },
+          {
+            "Nombre": "Singulidad Luminosa",
+            "Ataque": 8
+          },
+          {
+            "Nombre": "Destello Final",
+            "Ataque": 8
+          }
+        ]
+      },
+      "Velocidad": 6,
+      "Caracteristicas": {
+        "Velocidad": 6,
+        "Destreza": 5,
+        "Fuerza": 5,
+        "Nivel": 4,
+        "Armadura": 7,
+        "Salud": 100
+      }
+    },
+    "fechaVictoria": "2024-08-09"
+  },
+  {
+    "personajeGanador": {
+      "Datos": {
+        "Tipo": "Mage",
+        "Nombre": "Lux",
+        "Apodo": "La Dama Luminosa",
+        "FechaDeNacimiento": "1878-04-18T00:00:00",
+        "Edad": 146,
+        "Habilidades": [
+          {
+            "Nombre": "Luz Prisma",
+            "Ataque": 3
+          },
+          {
+            "Nombre": "Barrera de Luz",
+            "Ataque": 7
+          },
+          {
+            "Nombre": "Singulidad Luminosa",
+            "Ataque": 8
+          },
+          {
+            "Nombre": "Destello Final",
+            "Ataque": 8
+          }
+        ]
+      },
+      "Velocidad": 5,
+      "Caracteristicas": {
+        "Velocidad": 5,
+        "Destreza": 5,
+        "Fuerza": 6,
+        "Nivel": 4,
+        "Armadura": 7,
+        "Salud": 100
+      }
+    },
+    "fechaVictoria": "2024-08-09"
+  },
+  {
+    "personajeGanador": {
+      "Datos": {
+        "Tipo": "Mage",
+        "Nombre": "Lux",
+        "Apodo": "La Dama Luminosa",
+        "FechaDeNacimiento": "1878-04-18T00:00:00",
+        "Edad": 146,
+        "Habilidades": [
+          {
+            "Nombre": "Luz Prisma",
+            "Ataque": 3
+          },
+          {
+            "Nombre": "Barrera de Luz",
+            "Ataque": 7
+          },
+          {
+            "Nombre": "Singulidad Luminosa",
+            "Ataque": 8
+          },
+          {
+            "Nombre": "Destello Final",
+            "Ataque": 8
+          }
+        ]
+      },
+      "Velocidad": 5,
+      "Caracteristicas": {
+        "Velocidad": 5,
+        "Destreza": 5,
+        "Fuerza": 5,
+        "Nivel": 5,
+        "Armadura": 7,
+        "Salud": 100
+      }
+    },
+    "fechaVictoria": "2024-08-09"
   }
 ]

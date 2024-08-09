@@ -37,7 +37,11 @@ namespace EspacioPersonaje
 
         public int Velocidad
         {
+            // El getter devuelve el valor de la variable
             get => velocidad;
+
+            // El setter privado asigna un valor a la variable privada. 
+            // Al ser privado, solo se puede modificar desde dentro de la misma clase.
             private set => velocidad = value;
         }
 
@@ -158,6 +162,7 @@ namespace EspacioPersonaje
         // Método para mostrar las estadísticas del personaje en la consola
         public void MostrarEstadisticas()
         {
+            FuncionesUtiles.CentrarTexto($"Salud: {Salud}");
             FuncionesUtiles.CentrarTexto($"Velocidad: {Velocidad}");
             FuncionesUtiles.CentrarTexto($"Destreza: {Destreza}");
             FuncionesUtiles.CentrarTexto($"Fuerza: {Fuerza}");

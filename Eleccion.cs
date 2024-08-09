@@ -19,7 +19,7 @@ namespace EspacioPersonaje
             }
 
             int indicePersonaje = 0;
-            ConsoleKeyInfo tecla;
+            ConsoleKeyInfo tecla; // Lee la tecla presionada y almacena la información en la variable 'tecla'
             Personaje personajeUsuario = personajes[indicePersonaje];
             int cantidadMaximaPersonajes = 4;
             int contadorPersonajesMostrados = 0;
